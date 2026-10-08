@@ -12,6 +12,16 @@ Most wording can be changed without touching the page layout:
 
 The site layout is in `app/page.tsx` and the visual styling is in `app/globals.css`.
 
+## Tricentis interview portfolio
+
+The focused interview version is available at `/tricentis`.
+
+- Edit its wording in `content/tricentis.ts`.
+- Edit its page structure in `app/tricentis/page.tsx`.
+- Edit its visual styling in `app/tricentis/tricentis.module.css`.
+
+This page is marked `noindex`, so search engines are asked not to include the tailored application page in public search results. Anyone with the direct URL can still view it.
+
 ## 1. Change the headline
 
 Open `content/profile.ts`. Change the text after `headline:`. You can also change the professional title and supporting introduction in the same file.

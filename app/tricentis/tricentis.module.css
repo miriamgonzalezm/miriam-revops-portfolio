@@ -1,0 +1,212 @@
+.page {
+  --ink: #11251f;
+  --muted: #5d6d67;
+  --paper: #f5f7f2;
+  --surface: #ffffff;
+  --line: #cfd8d2;
+  --accent: #bdff36;
+  --accent-dark: #173d31;
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 86% 3%, rgba(189, 255, 54, 0.2), transparent 24rem),
+    var(--paper);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page * { box-sizing: border-box; }
+.page a { color: inherit; text-decoration: none; }
+
+.skipLink {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: 20;
+  padding: 0.75rem 1rem;
+  background: var(--ink);
+  color: white !important;
+  transform: translateY(-160%);
+}
+.skipLink:focus { transform: translateY(0); }
+
+.header,
+.hero,
+.fitSection,
+.evidenceSection,
+.operatingSection,
+.closing,
+.footer {
+  width: min(1180px, calc(100% - 3rem));
+  margin: 0 auto;
+}
+
+.header {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid var(--line);
+}
+.wordmark {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--paper) !important;
+  background: var(--ink);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+.nav { display: flex; gap: 1.5rem; margin-left: auto; font-size: 0.9rem; }
+.nav a:hover, .headerLink:hover, .footer a:hover { text-decoration: underline; text-underline-offset: 0.3rem; }
+.headerLink { font-size: 0.9rem; font-weight: 700; }
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(300px, 0.75fr);
+  gap: clamp(3rem, 8vw, 8rem);
+  padding: clamp(5rem, 10vw, 9rem) 0 clamp(5rem, 9vw, 8rem);
+}
+.heroCopy { max-width: 790px; }
+.eyebrow, .cardLabel {
+  margin: 0 0 1.25rem;
+  color: #3d6357;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+.hero h1 {
+  max-width: 850px;
+  margin: 0;
+  font-size: clamp(3rem, 6.7vw, 6.3rem);
+  line-height: 0.98;
+  letter-spacing: -0.065em;
+  text-wrap: balance;
+}
+.lede {
+  max-width: 720px;
+  margin: 2rem 0 0;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
+  line-height: 1.65;
+}
+.actions { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 2rem; }
+.primaryButton, .secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  min-height: 48px;
+  padding: 0.85rem 1.15rem;
+  border: 1px solid var(--ink);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+.primaryButton { background: var(--ink); color: white !important; }
+.secondaryButton { background: transparent; }
+.primaryButton:hover { background: var(--accent-dark); }
+.secondaryButton:hover { background: white; }
+
+.roleCard {
+  align-self: end;
+  padding: 2rem;
+  border-top: 5px solid var(--accent);
+  background: var(--ink);
+  color: white;
+  box-shadow: 20px 20px 0 rgba(17, 37, 31, 0.08);
+}
+.roleCard .cardLabel { color: var(--accent); }
+.roleCard h2 { margin: 0 0 0.65rem; font-size: 1.8rem; letter-spacing: -0.04em; }
+.roleCard > p:not(.cardLabel) { margin: 0.3rem 0; color: #cfdbd6; }
+.roleCard dl { margin: 2rem 0 0; }
+.roleCard dl > div { padding: 0.9rem 0; border-top: 1px solid rgba(255,255,255,0.18); }
+.roleCard dt { color: #9eafa8; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; }
+.roleCard dd { margin: 0.35rem 0 0; line-height: 1.4; }
+
+.fitSection,
+.evidenceSection,
+.operatingSection { padding: clamp(4.5rem, 9vw, 8rem) 0; border-top: 1px solid var(--line); }
+.sectionIntro { max-width: 790px; margin-bottom: 3rem; }
+.sectionIntro h2, .operatingSection h2, .closing h2 {
+  margin: 0;
+  font-size: clamp(2.2rem, 4.3vw, 4.2rem);
+  line-height: 1.04;
+  letter-spacing: -0.055em;
+  text-wrap: balance;
+}
+.sectionIntro > p:last-child, .sectionCopy, .closing > p:not(.eyebrow) {
+  margin: 1.4rem 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+.fitGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.fitCard { min-height: 285px; padding: 1.6rem; background: var(--surface); }
+.fitCard > span { color: #668078; font-size: 0.75rem; font-weight: 800; }
+.fitCard h3 { margin: 3.5rem 0 1rem; font-size: 1.35rem; line-height: 1.15; letter-spacing: -0.025em; }
+.fitCard p { margin: 0; color: var(--muted); line-height: 1.55; }
+
+.evidenceSection { width: 100%; max-width: none; padding-left: max(1.5rem, calc((100% - 1180px) / 2)); padding-right: max(1.5rem, calc((100% - 1180px) / 2)); background: var(--ink); color: white; }
+.evidenceSection .eyebrow { color: var(--accent); }
+.evidenceList { display: grid; gap: 1.2rem; }
+.caseStudy { padding: clamp(1.6rem, 4vw, 3rem); border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.035); }
+.caseHeading { display: grid; grid-template-columns: 48px 1fr; gap: 1rem; }
+.caseHeading > span { color: var(--accent); font-weight: 800; }
+.caseHeading p { margin: 0 0 0.55rem; color: #a8bbb4; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.11em; text-transform: uppercase; }
+.caseHeading h3 { max-width: 760px; margin: 0; font-size: clamp(1.7rem, 3vw, 2.8rem); letter-spacing: -0.04em; }
+.caseBody { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 2.2rem; background: rgba(255,255,255,0.18); }
+.caseBody > div { padding: 1.4rem; background: #173029; }
+.caseBody h4 { margin: 0 0 0.8rem; color: #a8bbb4; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.caseBody p { margin: 0; color: #e0e7e4; line-height: 1.6; }
+.caseBody .result { background: var(--accent); color: var(--ink); }
+.caseBody .result h4, .caseBody .result p { color: var(--ink); }
+.signal { margin: 1.4rem 0 0; color: #a8bbb4; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+
+.operatingSection { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(3rem, 8vw, 8rem); }
+.operatingList { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 2rem 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+.operatingList li { padding: 1rem 0; border-bottom: 1px solid var(--line); color: var(--ink); }
+.operatingList li:nth-child(odd) { padding-right: 1rem; }
+.toolkit { align-self: start; padding: 2rem; background: white; border: 1px solid var(--line); }
+.toolkit > div + div { margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--line); }
+.differentiator h3 { margin: 0 0 0.9rem; font-size: 1.45rem; line-height: 1.15; letter-spacing: -0.03em; }
+.differentiator > p:not(.cardLabel) { margin: 0; color: var(--muted); line-height: 1.55; }
+.differentiator strong { display: block; margin-top: 1.1rem; padding-left: 0.85rem; border-left: 4px solid var(--accent); font-size: 0.9rem; line-height: 1.4; }
+.toolkit ul { display: flex; flex-wrap: wrap; gap: 0.55rem; margin: 0; padding: 0; list-style: none; }
+.toolkit li { padding: 0.55rem 0.7rem; background: var(--paper); border: 1px solid var(--line); font-size: 0.82rem; }
+
+.closing { padding: clamp(5rem, 10vw, 9rem) 0; text-align: center; }
+.closing h2, .closing > p:not(.eyebrow) { max-width: 830px; margin-left: auto; margin-right: auto; }
+.closing .actions { justify-content: center; }
+.footer { display: flex; justify-content: space-between; gap: 1rem; padding: 1.5rem 0 2.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.8rem; }
+
+@media (max-width: 900px) {
+  .hero, .operatingSection { grid-template-columns: 1fr; }
+  .roleCard { max-width: 580px; }
+  .fitGrid { grid-template-columns: 1fr 1fr; }
+  .caseBody { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .header, .hero, .fitSection, .operatingSection, .closing, .footer { width: min(100% - 2rem, 1180px); }
+  .header { min-height: 70px; }
+  .nav { display: none; }
+  .headerLink { margin-left: auto; }
+  .hero { padding-top: 4.5rem; }
+  .hero h1 { font-size: clamp(2.8rem, 14vw, 4.5rem); }
+  .fitGrid { grid-template-columns: 1fr; }
+  .fitCard { min-height: auto; }
+  .fitCard h3 { margin-top: 2.5rem; }
+  .evidenceSection { padding-left: 1rem; padding-right: 1rem; }
+  .caseStudy { padding: 1.4rem; }
+  .caseHeading { grid-template-columns: 1fr; }
+  .operatingList { grid-template-columns: 1fr; }
+  .operatingList li:nth-child(odd) { padding-right: 0; }
+  .footer { flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .primaryButton, .secondaryButton, .fitCard { transition: transform 160ms ease, background-color 160ms ease; }
+  .primaryButton:hover, .secondaryButton:hover { transform: translateY(-2px); }
+  .fitCard:hover { transform: translateY(-3px); }
+}
