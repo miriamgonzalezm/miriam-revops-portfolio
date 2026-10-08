@@ -19,13 +19,13 @@ export const tricentisPortfolio = {
     },
     {
       number: "02",
-      title: "QBR leadership",
-      body: "I manage the QBR process at Ascertia, connecting pipeline, performance and business trends with actions and accountable follow-through.",
+      title: "Forecasting & Business Reviews",
+      body: "I own the sales forecasting cadence, lead forecast calls with sellers and facilitate quarterly business reviews, bringing together pipeline, performance data and cross-functional reporting for senior leadership.",
     },
     {
       number: "03",
       title: "Capacity & quota modelling",
-      body: "I have worked directly with Sales leadership on capacity choices and individual quota assumptions grounded in recurring revenue, productivity, pipeline and sales mix.",
+      body: "I work directly with the Sales Director on individual quota modelling and support route-to-market capacity decisions using recurring revenue, productivity, pipeline and sales-mix inputs.",
     },
     {
       number: "04",
@@ -42,8 +42,8 @@ export const tricentisPortfolio = {
       action:
         "I obtained the underlying partner reports, analysed the trend quarter over quarter, identified renewals that appeared to be missing and quantified the commercial impact. I presented the findings to our CRO so the issue could be challenged with evidence.",
       result:
-        "Following the partner discussions, revenue share recovered significantly to approximately £50,000 per quarter.",
-      signal: "Pattern recognition · Commercial analysis · Executive influence",
+        "Following discussions with the partner, quarterly revenue share recovered by approximately £50,000 compared with the lower levels previously observed.",
+      signal: "Pattern recognition · Commercial analysis · Executive decision support",
     },
     {
       label: "Quota planning → defensible assumptions",
@@ -51,28 +51,28 @@ export const tricentisPortfolio = {
       situation:
         "Individual quotas needed to support the overall target while reflecting meaningful differences in seller productivity, pipeline and deal mix.",
       action:
-        "Working with the Sales Director, I modelled the recurring revenue base using a conservative retention assumption, incorporated predictable partner revenue and calculated the new-business gap. We then adjusted individual expectations using historical productivity, existing pipeline, prior performance and the types of deals each seller typically closes.",
+        "Working directly with the Sales Director, I start with the recurring revenue base. Historical retention is approximately 95%, but we plan conservatively using around 90% of expected renewals. We include a reasonable estimate of partner revenue share, calculate the remaining new-business gap, and adjust individual quotas using seller productivity and performance, existing pipeline and expected deal mix. Some sellers specialise in larger perpetual licence deals, so the target is not divided equally.",
       result:
-        "The result was a more grounded allocation than dividing the target equally, with assumptions leadership could inspect and discuss.",
+        "The model produces differentiated individual quotas that collectively support the overall company sales target. I participate directly in the modelling and assumptions with the Sales Director rather than owning company quota setting independently.",
       signal: "Revenue modelling · Quota planning · Sales partnership",
     },
     {
       label: "Capacity planning → operating model",
-      title: "Investing where the real constraint existed",
+      title: "Aligning capacity with route-to-market strategy",
       situation:
-        "The goal was to increase partner-sourced new business, but the limiting factor was partner-generated pipeline rather than the number of sellers available to close opportunities.",
+        "Ascertia had a strategic objective to increase the proportion of new business coming through partners. This created a capacity decision about where additional commercial investment should sit.",
       action:
-        "The business invested in Channel and Alliances capacity instead of simply adding direct sellers. I supported the operating model around the decision, including opportunity management and bringing Channel into the commission structure so incentives reinforced the strategy.",
+        "The business chose to hire a Channel & Alliances team member rather than simply expand the direct sales team, and later expanded the function further. Opportunities continued to be managed and closed by the existing sales team. From Sales Operations, I supported how those opportunities were handled and incorporated Channel into the commission structure so the role could be appropriately incentivised.",
       result:
-        "The model increased pipeline-generation capacity through partners while continuing to use the existing sales team for opportunity management and closing.",
-      signal: "Capacity diagnosis · Channel strategy · Incentive alignment",
+        "This is an example of route-to-market strategy influencing where commercial capacity was invested, with Sales Operations supporting the processes and incentives around the chosen model.",
+      signal: "Route-to-market capacity · Channel strategy · Incentive alignment",
     },
   ],
   operatingCadence: [
-    "Pipeline visibility and forecasting",
-    "QBR preparation, facilitation and follow-through",
-    "Performance and productivity analysis",
-    "Automated reporting and dashboard design",
+    "Sales forecasting cadence and seller forecast calls",
+    "QBR facilitation and cross-functional reporting",
+    "Pipeline, performance and productivity analysis",
+    "KPI definition, dashboards and operationalisation",
     "CRM governance and data quality",
     "Business requirements, testing and UAT",
   ],

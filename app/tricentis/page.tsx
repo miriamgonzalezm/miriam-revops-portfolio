@@ -84,7 +84,7 @@ export default function TricentisPortfolioPage() {
             <p className={styles.eyebrow}>ROLE ALIGNMENT</p>
             <h2 id="fit-title">The questions behind the numbers are where I add value.</h2>
             <p>
-              The Tricentis role calls for analytical depth, commercial judgment and the ability to influence EMEA leadership. These are the capabilities I use in my current role.
+              The Tricentis role calls for analytical depth, commercial judgment and the ability to support EMEA leadership with clear evidence. These are capabilities I use in my current role.
             </p>
           </div>
           <div className={styles.fitGrid}>
@@ -101,7 +101,7 @@ export default function TricentisPortfolioPage() {
         <section className={styles.evidenceSection} id="evidence" aria-labelledby="evidence-title">
           <div className={styles.sectionIntro}>
             <p className={styles.eyebrow}>SELECTED EVIDENCE</p>
-            <h2 id="evidence-title">Three examples of analysis changing the operating decision.</h2>
+            <h2 id="evidence-title">Three examples of analysis and operations supporting commercial decisions.</h2>
           </div>
 
           <div className={styles.evidenceList}>
@@ -139,7 +139,7 @@ export default function TricentisPortfolioPage() {
             <p className={styles.eyebrow}>OPERATING RANGE</p>
             <h2 id="operating-title">Insight is useful when it becomes an operating rhythm.</h2>
             <p className={styles.sectionCopy}>
-              I connect commercial analysis with the cadences, systems and governance needed to keep decisions moving after the leadership meeting.
+              I connect commercial analysis with consistent reporting cadences, GTM systems and data governance so leadership discussions are based on reliable, useful information.
             </p>
             <ul className={styles.operatingList}>
               {content.operatingCadence.map((item) => <li key={item}>{item}</li>)}
