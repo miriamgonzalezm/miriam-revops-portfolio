@@ -31,7 +31,7 @@ export default function TradingTechnologiesPage() {
         <nav className={styles.nav} aria-label="Page navigation">
           <a href="#alignment">Alignment</a>
           <a href="#rhythm">Operating rhythm</a>
-          <a href="#change">Change</a>
+          <a href="#change">Acquisition</a>
           <a href="#work">Evidence</a>
         </nav>
         <a className={styles.headerLink} href={content.profile.linkedIn} target="_blank" rel="noreferrer">
@@ -138,7 +138,7 @@ export default function TradingTechnologiesPage() {
 
         <section className={styles.changeSection} id="change" aria-labelledby="change-title">
           <div className={styles.changeHeading}>
-            <p className={styles.overline}>POST-ACQUISITION OPERATIONS</p>
+            <p className={styles.overline}>POST-ACQUISITION INTEGRATION · CURRENT EXPERIENCE</p>
             <h2 id="change-title">{content.acquisition.title}</h2>
             <p>{content.acquisition.introduction}</p>
           </div>

@@ -5,9 +5,9 @@ export const tradingTechnologiesPortfolio = {
     roleLabel: "Trading Technologies — GTM Operations Lead",
     headline: "GTM Operations | Revenue Operations | Salesforce & Process Transformation",
     introduction:
-      "Building the operating cadence, processes and systems that turn commercial strategy into consistent execution.",
+      "I run forecasting and QBR cadence, design governed GTM processes and support post-acquisition integration through organisational and systems change.",
     currentRole: "Senior Sales Operations Manager",
-    company: "Ascertia · Global B2B software",
+    company: "Ascertia · Global B2B software · Acquired by InfoCert/Tinexta",
     linkedIn: "https://www.linkedin.com/in/mirgonzalez1/",
     email: "mir_864@hotmail.com",
   },
@@ -22,14 +22,14 @@ export const tradingTechnologiesPortfolio = {
       title: "Revenue operating rhythm",
       need: "Forecast calls, pipeline reviews and leadership cadence",
       evidence:
-        "Own the sales forecasting cadence, lead seller forecast calls and host QBRs with coordinated cross-functional reporting.",
+        "Own the sales forecasting cadence, consolidate seller commitments, lead forecast calls and host QBRs with coordinated cross-functional reporting.",
     },
     {
       number: "02",
       title: "Pipeline & CRM governance",
       need: "Clean inputs, process rules and visible pipeline risk",
       evidence:
-        "Salesforce process design, opportunity governance, required data, validation, reporting, dashboards and data-quality controls.",
+        "Hands-on Salesforce process design, opportunity governance, required data, validation, reporting, dashboards and data-quality controls.",
     },
     {
       number: "03",
@@ -43,7 +43,7 @@ export const tradingTechnologiesPortfolio = {
       title: "Acquisition & change",
       need: "Adapt processes while the operating model is changing",
       evidence:
-        "Supporting Ascertia's post-acquisition operational integration into InfoCert/Tinexta while continuing to run and improve BAU operations.",
+        "Support post-acquisition integration following Ascertia's acquisition by InfoCert/Tinexta, adapting commercial processes, data ownership and controls while continuing BAU operations.",
     },
     {
       number: "05",
@@ -106,9 +106,9 @@ export const tradingTechnologiesPortfolio = {
     "Data quality",
   ],
   acquisition: {
-    title: "Operating through change, not around it.",
+    title: "Operating through acquisition-driven change.",
     introduction:
-      "Ascertia's acquisition by InfoCert/Tinexta introduced an operating environment involving organisational, process and systems integration. I support that transition from a Sales Operations and commercial-process perspective while continuing to run and improve BAU operations.",
+      "Following Ascertia's acquisition by InfoCert/Tinexta, I am working through a fast-paced period of organisational and systems change. From a Sales Operations perspective, I support the integration by helping adapt commercial processes, data ownership and controls as the business transitions towards the group's operating model, while continuing to run and improve BAU operations.",
     areas: [
       {
         title: "Map the current state",
@@ -119,8 +119,8 @@ export const tradingTechnologiesPortfolio = {
         body: "Review customer master data, opportunity-to-invoice processes, billing and financial handoffs, renewals and collections.",
       },
       {
-        title: "Support the transition",
-        body: "Help translate current commercial processes towards the group's SAP environment and larger operating model, without owning the SAP implementation.",
+        title: "Adapt to the group model",
+        body: "Help adapt commercial processes, ownership boundaries and operational controls to support the transition into a larger group operating model.",
       },
       {
         title: "Keep BAU working",
@@ -128,7 +128,7 @@ export const tradingTechnologiesPortfolio = {
       },
     ],
     takeaway:
-      "Practical experience working inside a business while its operating model, systems and ownership boundaries are changing.",
+      "Direct experience supporting post-acquisition integration while the operating model, systems and ownership boundaries are changing.",
   },
   transformations: [
     {
@@ -169,12 +169,12 @@ export const tradingTechnologiesPortfolio = {
     },
   ],
   contribution: [
+    "Current experience supporting post-acquisition integration through organisational and systems change",
     "A builder mindset focused on improving the operating model",
     "Hands-on Salesforce capability with business-process ownership",
     "Experience running forecast calls and QBR cadence",
     "Commercial problems translated into scalable process and system requirements",
     "Cross-functional delivery across GTM, Finance and Systems",
-    "Experience supporting acquisition-driven organisational change",
     "Practical AI and automation that removes low-value manual work",
   ],
   experience: [
