@@ -184,8 +184,6 @@
 .connector { font-size: 1.25rem; }
 .rhythmCycle h3 { margin: 3rem 0 1rem; font-size: 1.2rem; letter-spacing: -0.02em; }
 .rhythmCycle p { margin: 0; color: #ced8dd; font-size: 0.93rem; line-height: 1.55; }
-.scopeNote { max-width: 800px; margin: 2rem 0 0 auto; padding-left: 1rem; border-left: 4px solid var(--accent); color: #c9d3d8; font-size: 0.88rem; line-height: 1.5; }
-
 .governanceSection { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(3rem, 8vw, 8rem); align-items: start; }
 .governanceTags { display: flex; flex-wrap: wrap; gap: 0.55rem; margin-top: 2rem; }
 .governanceTags span { padding: 0.55rem 0.7rem; border: 1px solid var(--line); background: var(--surface); font-size: 0.8rem; }

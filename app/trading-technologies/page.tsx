@@ -112,9 +112,6 @@ export default function TradingTechnologiesPage() {
               </li>
             ))}
           </ol>
-          <p className={styles.scopeNote}>
-            I own the forecasting cadence and process. I do not claim ownership of sophisticated enterprise forecast-accuracy modelling.
-          </p>
         </section>
 
         <section className={styles.governanceSection} id="governance" aria-labelledby="governance-title">
@@ -122,7 +119,7 @@ export default function TradingTechnologiesPage() {
             <p className={styles.overline}>PROCESS & CRM GOVERNANCE</p>
             <h2 id="governance-title">From commercial requirement to an adopted control.</h2>
             <p>
-              I operate at the business-process layer and remain hands-on with Salesforce. I can define what the process needs to achieve, translate it into system requirements and build suitable components, while partnering with Systems & Integrations on architecture, development and complex integrations.
+              I operate at the business-process layer and remain hands-on with Salesforce. The outbound and lead management transformation is one example: defining a new commercial process, challenging an existing workflow, translating both into governance requirements and implementing the resulting changes across Salesforce and Apollo.io. I also partner with Systems & Integrations on architecture, development and complex integrations.
             </p>
             <div className={styles.governanceTags} aria-label="Governance experience">
               {content.governanceAreas.map((area) => <span key={area}>{area}</span>)}

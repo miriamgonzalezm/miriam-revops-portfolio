@@ -34,9 +34,9 @@ export const tradingTechnologiesPortfolio = {
     {
       number: "03",
       title: "GTM process design",
-      need: "Funnel processes, routing, handoffs and renewals",
+      need: "Outbound creation, lead routing and governance",
       evidence:
-        "Cross-functional workflows spanning lead routing, opportunity management, outbound, customer handoffs and recurring commercial processes.",
+        "Created a formal outbound prospecting process where none existed and redesigned the existing lead management process across Salesforce and Apollo.io.",
     },
     {
       number: "04",
@@ -84,7 +84,7 @@ export const tradingTechnologiesPortfolio = {
     {
       step: "05",
       title: "Compensation",
-      body: "Manage quarterly commission packs across Sales, Channel and Pre-Sales without claiming sole ownership of compensation strategy.",
+      body: "Manage the quarterly commission process and packs across Sales, Channel and Pre-Sales.",
     },
   ],
   processModel: [
@@ -157,15 +157,15 @@ export const tradingTechnologiesPortfolio = {
     },
     {
       number: "03",
-      label: "GTM process governance",
-      title: "Commercial rules translated into Salesforce",
+      label: "GTM process design & governance",
+      title: "Building outbound and redesigning lead management",
       problem:
-        "Lead routing, opportunities, customer handoffs and renewals require clear ownership, usable data and consistent operating rules.",
+        "There was no established outbound sales process, while the existing lead management process needed restructuring.",
       action:
-        "Define the commercial process and governance requirements, build suitable Salesforce components where appropriate, and partner with Systems & Integrations on architecture, development and complex integrations.",
-      impact: "Process → system",
-      impactLabel: "business requirements connected to practical CRM controls",
-      signals: ["Lead routing", "Pipeline governance", "Handoffs", "Renewals"],
+        "Designed and implemented a new outbound prospecting process using Apollo.io, while revisiting lead stages and redesigning routing, ownership, segmentation, exclusion and governance rules across Salesforce and Apollo.io.",
+      impact: "Build + redesign",
+      impactLabel: "a structured outbound process with clearer lead management governance",
+      signals: ["Outbound process", "Lead stages", "Routing & ownership", "Governance"],
     },
   ],
   contribution: [
