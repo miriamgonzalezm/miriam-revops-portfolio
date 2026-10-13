@@ -22,6 +22,16 @@ The focused interview version is available at `/tricentis`.
 
 This page is marked `noindex`, so search engines are asked not to include the tailored application page in public search results. Anyone with the direct URL can still view it.
 
+## Trading Technologies interview portfolio
+
+The focused GTM Operations Lead version is available at `/trading-technologies`.
+
+- Edit its wording in `content/trading-technologies.ts`.
+- Edit its page structure in `app/trading-technologies/page.tsx`.
+- Edit its visual styling in `app/trading-technologies/trading-technologies.module.css`.
+
+This route is also marked `noindex`. It remains accessible to anyone with the direct URL.
+
 ## 1. Change the headline
 
 Open `content/profile.ts`. Change the text after `headline:`. You can also change the professional title and supporting introduction in the same file.
