@@ -5,6 +5,7 @@ export type Project = {
   challenge: string;
   solution?: string;
   sections?: { heading: string; body: string }[];
+  highlightsLabel?: string;
   highlights?: string[];
   impact?: { value: string; label: string }[];
   closing: string;
@@ -14,75 +15,70 @@ export type Project = {
 export const projects: Project[] = [
   {
     number: "01",
-    title: "AI-powered Sales Operations Reconciliation",
-    tags: ["Salesforce Agentforce", "Xero", "AI Automation", "Revenue Operations"],
+    title: "Building an AI-enabled GTM operating model",
+    tags: ["Salesforce Agentforce", "AI Automation", "GTM Operations", "Human Oversight"],
     featured: true,
-    challenge: "Recurring Sales Operations controls required information to be reviewed across Salesforce and Xero, combining commercial records, invoices, renewals and other operational data. The process was manual, repetitive and dependent on someone knowing what to look for.",
-    solution: "I designed and deployed a production AI Sales Operations Agent in Salesforce Agentforce that performs recurring weekly and monthly operational checks and allows users to investigate exceptions conversationally.",
+    challenge: "Different parts of the GTM organisation rely on recurring, information-heavy work: checking commercial records, navigating RFP content, managing accounts and renewals, and finding the pipeline or revenue information leadership needs. The opportunity was to turn that operational knowledge into focused AI workflows without removing judgement from commercial decisions.",
+    solution: "I designed and built a suite of specialised, interconnected Salesforce Agentforce agents supporting Sales Operations, RFP responses, account and renewal management, and sales leadership. Each agent is shaped around a defined operational problem, the information required and the point at which uncertainty should return to a person.",
+    highlightsLabel: "The agent suite supports",
     highlights: [
-      "Invoice values and commercial records",
-      "Account-code and product consistency",
-      "Contract and opportunity dates",
-      "Renewal continuity",
-      "Licences and deployments",
-      "Outstanding debt",
-      "Data completeness",
-      "Invoice documentation and approval",
-      "Revenue-recognition controls"
+      "Sales Operations controls and exception review",
+      "RFP information and response workflows",
+      "Account and renewal management workflows",
+      "Leadership access to pipeline and revenue insight"
     ],
     sections: [
-      { heading: "Operating design", body: "This was not simply an AI prompt. The solution required translating operational knowledge into explicit business rules, determining which checks could be automated, defining matching and tolerance logic, and designing how exceptions should be surfaced." },
-      { heading: "Governance", body: "Read-only by design. The Agent identifies and explains exceptions but does not autonomously modify commercial records. Ambiguous cases remain subject to human review." }
+      { heading: "Production example", body: "The production Sales Operations Agent performs recurring checks across Salesforce and finance data, covering invoice values and line items, account codes, contract and close dates, opportunity completeness, renewals, debt and revenue-recognition-related controls. It is estimated to eliminate more than 125 hours of manual review annually." },
+      { heading: "Decision logic & quality", body: "An early exact-matching approach created false exceptions when different account-code numbers represented commercially equivalent products or services. I refined the logic to consider commercial meaning and to escalate uncertainty instead of making unsafe assumptions." },
+      { heading: "Governance", body: "The Sales Operations Agent is read-only by design. It identifies and explains exceptions but does not autonomously modify commercial records, keeping human review at the centre of ambiguous or consequential decisions." }
     ],
-    impact: [{ value: "125+ hours", label: "estimated manual review eliminated annually" }],
-    closing: "A recurring manual control became a repeatable, explainable operational system."
+    impact: [
+      { value: "4", label: "specialised Agentforce agents designed and built" },
+      { value: "125+ hours", label: "estimated annual review time saved by the Sales Operations Agent" }
+    ],
+    closing: "The operating model determines where AI acts, where it explains and where a person decides."
   },
   {
     number: "02",
-    title: "One HubSpot, Cleaner GTM Data",
+    title: "One HubSpot, cleaner GTM data",
     tags: ["HubSpot", "CRM Governance", "Data Migration", "Process Design"],
-    challenge: "Two separate HubSpot environments created duplicated administration, fragmented customer and prospect data, and unnecessary licensing requirements.",
-    sections: [{ heading: "Approach", body: "Led the business-side consolidation into a single environment, covering approximately 7,000 contacts and rationalising data, workflows, forms and governance. Worked through what should migrate, what should be retired and how the consolidated environment should operate going forward." }],
+    challenge: "Two separate HubSpot environments created duplicated administration, fragmented customer and prospect data, and unnecessary licence requirements.",
+    sections: [{ heading: "Approach", body: "Led the business-side consolidation into a single environment, migrating approximately 7,000 contacts and rationalising lifecycle data, workflows, forms and governance. The work required deciding what should migrate, what should be retired and how the consolidated environment should operate going forward." }],
     impact: [
       { value: "~7,000", label: "contacts consolidated" },
       { value: ">50%", label: "reduction in licence requirements" }
     ],
-    closing: "Consolidation wasn't just a migration exercise — it was an opportunity to simplify the operating model."
+    closing: "Consolidation became an opportunity to simplify the operating model, not just move data."
   },
   {
     number: "03",
-    title: "Building Governed Outbound Infrastructure",
-    tags: ["Apollo.io", "Salesforce", "HubSpot", "Data Governance", "GDPR"],
-    challenge: "Introducing outbound prospecting technology required more than purchasing a platform. Existing customers, partners and active opportunities needed to be protected while ownership, segmentation and data flows remained clear.",
-    sections: [{ heading: "My role", body: "Participated in the technology evaluation and implementation of Apollo.io and designed the business rules governing how it interacts with the existing GTM ecosystem." }],
+    title: "Building outbound and redesigning lead management",
+    tags: ["Apollo.io", "Salesforce", "Lead Lifecycle", "GTM Governance"],
+    challenge: "There was no formal outbound sales process, while the existing lead management process needed clearer stages, routing, ownership and controls.",
+    sections: [{ heading: "Contribution", body: "Designed and implemented a new outbound operating process with Apollo.io while revisiting the lead lifecycle across Salesforce and Apollo.io. I translated the commercial model into qualification, routing, ownership, segmentation, customer and partner exclusions, active-opportunity protection and governance rules." }],
     highlights: [
-      "Salesforce-centred data flows",
-      "Customer and partner exclusions",
-      "Active-opportunity protection",
-      "Segmentation and ownership rules",
-      "Outbound account-status controls",
-      "Governance supporting GDPR requirements"
+      "A structured outbound operating process",
+      "Clearer lead stages and qualification",
+      "Defined routing and ownership",
+      "Segmentation and exclusion controls",
+      "Salesforce-centred governance"
     ],
-    closing: "The project established a controlled operating framework for outbound activity and clarified where prospecting technology should — and should not — interact with core CRM data."
+    closing: "The achievement was a governed commercial process, with Apollo.io serving the operating model rather than defining it."
   },
   {
     number: "04",
-    title: "Taking AI from Feature to Workflow",
-    tags: ["Salesforce Agentforce", "Sales", "Process Automation", "Adoption"],
-    challenge: "Partnering with Systems & Integrations to identify practical Agentforce use cases across Sales and translate commercial workflows into AI-enabled processes.",
-    sections: [
-      { heading: "Identify", body: "Find repetitive or information-heavy workflows where AI can genuinely remove friction." },
-      { heading: "Test", body: "Validate outputs against real commercial scenarios and refine business rules." },
-      { heading: "Adopt", body: "Help users understand where AI fits into their existing workflow rather than introducing technology for its own sake." }
-    ],
-    closing: "AI adoption works when the technology disappears into a better process."
+    title: "Operating through acquisition-driven change",
+    tags: ["Post-acquisition", "Operating Model", "Commercial Governance", "Cross-functional GTM"],
+    challenge: "Ascertia's acquisition by InfoCert, part of Tinexta Group, reached 100% ownership in July 2026, creating a fast-paced period in which priorities, structures and ways of working continued to evolve.",
+    sections: [{ heading: "Contribution", body: "Continued owning and improving critical commercial operations through the acquisition and integration period. I adapted forecasting and review cadences, systems governance, data ownership, controls and cross-functional ways of working while maintaining the recurring processes leadership and commercial teams relied on." }],
+    closing: "The experience strengthened my ability to create operating discipline while the organisation around the process is changing."
   }
 ];
 
 export const operatingAreas = [
-  { title: "Forecasting & Pipeline", description: "Pipeline visibility, forecasting and performance reporting for senior commercial leadership." },
-  { title: "Sales Compensation", description: "Quarterly compensation processes spanning Sales, Channel and Pre-Sales." },
-  { title: "Customer Lifecycle", description: "Cross-functional processes connecting Sales, Customer Success and Finance across renewals, invoicing and commercial controls." },
-  { title: "CRM Governance", description: "Salesforce process design, automation, validation, reporting and data-quality controls." },
-  { title: "Systems Integration", description: "Business-side ownership of requirements and data flows across Salesforce, HubSpot, Apollo.io, Xero and related systems." }
+  { title: "Forecasting & Business Reviews", description: "Own the sales forecasting methodology and cadence, lead seller forecast reviews, and host commercial QBRs that bring pipeline, revenue, KPI and cross-functional reporting into a consistent senior leadership view." },
+  { title: "Annual Planning, Quotas & KPIs", description: "Partner directly with the Sales Director on planning and individual quota allocation using recurring revenue, expected retention, partner contribution, pipeline, deal mix and seller performance." },
+  { title: "Sales Compensation", description: "Manage quarterly compensation processes across Sales, Channel and Pre-Sales, including validation of direct and partner-led commission calculations." },
+  { title: "Pipeline, Partner & CRM Governance", description: "Set business-side requirements for opportunity attribution, account ownership, partner processes, reporting, data quality and Salesforce workflows." },
+  { title: "Commercial Controls", description: "Run recurring Salesforce and Xero reconciliation processes that improve alignment between CRM records, invoicing and financial reporting." }
 ] as const;

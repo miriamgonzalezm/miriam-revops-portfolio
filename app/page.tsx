@@ -39,15 +39,15 @@ export default function Home() {
               </div>
               <p className="hero-meta">{profile.location}<span />{profile.context}<span />{profile.credential}</p>
             </div>
-            <aside className="hero-system" aria-label="Revenue operations model">
-              <div className="system-top"><span>Operating model</span><span>01 / 05</span></div>
-              <div className="system-core"><span>Commercial<br />clarity</span></div>
+            <aside className="hero-system" aria-label="AI-enabled GTM operating model">
+              <div className="system-top"><span>AI-enabled GTM</span><span>Agentforce</span></div>
+              <div className="system-core"><span>4 specialised<br />agents</span></div>
               <ol>
-                <li><span>01</span>Process Design</li>
-                <li><span>02</span>Systems</li>
-                <li><span>03</span>Data</li>
-                <li><span>04</span>Governance</li>
-                <li><span>05</span>Adoption</li>
+                <li><span>01</span>Sales Operations</li>
+                <li><span>02</span>RFP Responses</li>
+                <li><span>03</span>Accounts & Renewals</li>
+                <li><span>04</span>Sales Leadership</li>
+                <li><span>05</span>Human judgement retained</li>
               </ol>
             </aside>
           </div>
@@ -80,7 +80,7 @@ export default function Home() {
           <div className="shell">
             <div className="section-heading split-heading light-heading">
               <p className="kicker">Selected work</p>
-              <h2 id="work-title">Operations designed to be used, trusted and repeated.</h2>
+              <h2 id="work-title">Commercial operations built to be used, trusted and improved.</h2>
             </div>
 
             <article className="flagship">
@@ -93,7 +93,7 @@ export default function Home() {
                   <div><h4>Solution</h4><p>{flagship.solution}</p></div>
                 </div>
                 <div className="checks-panel">
-                  <p>Operational checks include</p>
+                  <p>{flagship.highlightsLabel ?? "Operational checks include"}</p>
                   <ul>{flagship.highlights?.map((item) => <li key={item}>{item}</li>)}</ul>
                 </div>
                 <div className="project-narrative secondary-narrative">
@@ -137,7 +137,7 @@ export default function Home() {
             <div className="method-grid">
               {workingMethod.map((step) => <article key={step.number}><span>{step.number}</span><h3>{step.title}</h3><strong>{step.question}</strong><p>{step.description}</p></article>)}
             </div>
-            <p className="method-closing">Technology is only useful when it changes how the business operates.</p>
+            <p className="method-closing">Technology is useful when it improves how the business operates — and remains safe when conditions are unclear.</p>
           </div>
         </section>
 
@@ -178,7 +178,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer><div className="shell"><strong>{profile.name}</strong><span>Revenue Operations & GTM Systems</span><span>Woking, UK</span><a href="#top">Back to top ↑</a></div></footer>
+      <footer><div className="shell"><strong>{profile.name}</strong><span>Revenue Operations · GTM Systems · AI Automation</span><span>Woking, UK</span><a href="#top">Back to top ↑</a></div></footer>
     </>
   );
 }
