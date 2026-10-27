@@ -58,7 +58,7 @@ export const relayPortfolio = {
         "Salesforce retained as the commercial source of truth",
         "Lower risk of inappropriate outreach",
       ],
-      signals: ["Build from scratch", "Sales process design", "CRM architecture", "Segmentation", "Governance", "Commercial judgement"],
+      signals: ["Build from scratch", "Sales process design", "CRM operating design", "Segmentation", "Governance", "Commercial judgement"],
     },
     {
       number: "02",
@@ -108,7 +108,7 @@ export const relayPortfolio = {
     {
       number: "04",
       title: "Turning commercial controls into scalable systems",
-      relevance: ["Commercial governance", "Deal Desk foundations", "Exception handling", "Finance alignment"],
+      relevance: ["Commercial governance", "Deal controls", "Exception handling", "Finance alignment"],
       challenge: "Salesforce and Xero information needed to reconcile reliably before month-end across invoices, account codes, opportunities, contract dates and revenue-recognition information.",
       contribution: "I established recurring controls, defined what should match across CRM and Finance, investigated discrepancies and edge cases, worked with Finance to correct issues before close, and strengthened Salesforce governance to reduce recurrence. I later translated parts of this logic into automated Sales Operations checks.",
       outcome: "A repeatable control framework that identifies discrepancies before financial reporting rather than relying on post-close correction.",
@@ -125,7 +125,7 @@ export const relayPortfolio = {
     },
   ],
   commercialExperience: [
-    { title: "Forecasting & Pipeline", body: "Own the seller forecasting cadence and lead reviews covering expected close, deal movement, pipeline risk and changes in outlook." },
+    { title: "Forecasting & Pipeline", body: "Own the seller forecasting cadence and lead forecast reviews covering expected close, deal movement, pipeline risk and changes in outlook." },
     { title: "Commercial Planning", body: "Partner with the Sales Director on quota planning using recurring revenue, retention, pipeline, expected deal mix and seller performance." },
     { title: "Commercial Governance", body: "Own recurring controls across direct and partner-led business, including opportunity governance, sales compensation and Finance alignment." },
     { title: "Channel & Partner Operations", body: "Support partner attribution, opportunity governance and commercial processes across partner-led business." },

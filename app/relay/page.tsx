@@ -49,7 +49,7 @@ export default function RelayPage() {
           <aside className={styles.proofPanel} aria-label="Candidate evidence summary">
             <div className={styles.proofPanelTop}>
               <span>Evidence at a glance</span>
-              <span>Relay · Sales Operations</span>
+              <span>Relevant to Relay</span>
             </div>
             <div className={styles.proofGrid}>
               {content.proof.map((item) => (
