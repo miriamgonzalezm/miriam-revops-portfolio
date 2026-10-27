@@ -4,6 +4,7 @@ export const relayPortfolio = {
     role: "Senior Sales Operations Manager",
     location: "Woking, Surrey",
     positioning: "Sales Operations · GTM Systems · Commercial Automation",
+    context: "Selected work relevant to Relay Technologies' Sales Operations Manager role",
     headline: "I turn commercial friction into operating systems that scale.",
     introduction:
       "I design and build the processes, systems and automation behind reliable sales execution — from lead lifecycle and CRM governance to forecasting, commercial controls and AI-enabled workflows.",
@@ -12,10 +13,9 @@ export const relayPortfolio = {
     email: "mir_864@hotmail.com",
   },
   proof: [
-    { label: "Build", value: "Outbound operating model", detail: "Created the process, lifecycle, rules and governance from scratch." },
-    { label: "Lead", value: "HubSpot consolidation", detail: "Led the business-side transformation of two environments into one." },
-    { label: "Impact", value: "125+ hours · >50%", detail: "Estimated annual review time saved · licence reduction." },
-    { label: "Structure", value: "Forecasts · QBRs · controls", detail: "Run the recurring cadence that keeps commercial work reliable." },
+    { label: "Build", value: "Operating models", detail: "Outbound process · Salesforce automation · AI agents" },
+    { label: "Lead", value: "Commercial change", detail: "CRM consolidation · cross-functional process design · forecasting cadence" },
+    { label: "Impact", value: "Visible outcomes", detail: "125+ hours saved · >50% licence reduction · ~7,000 contacts consolidated" },
   ],
   method: [
     { number: "01", title: "Understand the commercial problem", body: "Start with the business outcome, users and constraints — not the tool." },
@@ -24,22 +24,34 @@ export const relayPortfolio = {
     { number: "04", title: "Test real behaviour and exceptions", body: "Validate with users and commercial scenarios rather than assuming the first design is correct." },
     { number: "05", title: "Measure, govern and improve", body: "Track outcomes, refine the process and retain human judgement where risk matters." },
   ],
+  whyExamples: {
+    title: "Why these examples",
+    body: "Relay's role connects commercial process design, CRM, lead prioritisation, governance and automation across different sales motions. These examples focus on work where I personally defined the operating model, built or led the solution and improved how the commercial team works in practice.",
+  },
+  salesMotions: {
+    title: "Different motions need different operating models",
+    body: "I would not assume Enterprise and high-volume field motions should use the same process simply because they share a CRM. Enterprise operations tend to depend more on account prioritisation, deal progression and commercial governance; higher-volume motions depend more on coverage, routing, conversion and repeatability. I prefer a common data foundation with different workflows where the selling behaviour genuinely differs.",
+  },
+  commercialFlow: {
+    steps: ["Addressable market", "Prioritisation", "Engagement", "CRM progression", "Commercial governance", "Close / hand-off", "Measure & improve"],
+    note: "My strongest direct experience sits across segmentation, outbound targeting, CRM design, commercial governance and automation. Formal end-to-end TAM ownership and a dedicated Deal Desk would be natural extensions of this work.",
+  },
   flagshipCases: [
     {
       number: "01",
       eyebrow: "BUILD FROM SCRATCH · GTM PROCESS DESIGN",
       title: "Building an outbound operating model from scratch",
+      relevance: ["Lead prioritisation", "Segmentation", "CRM governance", "Outbound operating model"],
       challenge:
         "Ascertia did not have a structured outbound operating model. The business needed a repeatable way to identify, qualify and work prospects while keeping Salesforce as the commercial source of truth and protecting existing customers, partners and active opportunities.",
       actions: [
         "Evaluated outbound tooling and selected Apollo.io.",
-        "Designed the lead lifecycle, qualification and ownership model.",
-        "Defined segmentation, exclusion, GDPR and suppression rules.",
-        "Created controls for customers, partners and accounts with active opportunities.",
+        "Designed the lead lifecycle, qualification, routing and ownership model.",
+        "Built segmentation, exclusion, GDPR and suppression rules, including protection for customers, partners and active opportunities.",
         "Designed Apollo.io as part of a Salesforce-centred GTM architecture rather than a second CRM.",
-        "Documented the operating process and governance.",
+        "Documented the operating process, controls and governance.",
       ],
-      impactTitle: "A governed outbound operating model where no consistent process previously existed.",
+      impactTitle: "Created a governed outbound operating model where there had previously been no consistent process, while keeping Salesforce as the source of truth and reducing the risk of inappropriate outreach.",
       impacts: [
         "Clear qualification and ownership",
         "Consistent segmentation and exclusions",
@@ -52,18 +64,20 @@ export const relayPortfolio = {
       number: "02",
       eyebrow: "AI-ENABLED SALES OPERATIONS",
       title: "Building AI agents for real Sales Operations work",
+      relevance: ["Process automation", "Operational efficiency", "AI governance", "Exception handling"],
       challenge:
         "Recurring Sales Operations work required repetitive checking across Salesforce and finance data, but the underlying rules often depended on commercial judgement rather than simple exact matching.",
       actions: [
         "Designed and built interconnected Agentforce agents for Sales Operations, RFP responses, account and renewal management, and sales leadership.",
-        "Mapped recurring checks and translated commercial decision logic into agent workflows.",
-        "Tested outputs using real exceptions and investigated where the first design failed.",
-        "Refined exact-matching logic when different account codes represented commercially equivalent products or services.",
+        "Mapped recurring checks and translated commercial decision logic into agent workflows, initially using exact matching.",
+        "Tested real exceptions and found that literal matches created false flags where different codes represented commercially equivalent products or services.",
+        "Refined the logic to recognise commercial equivalence and escalate uncertainty.",
         "Kept the Sales Operations agent read-only and required human review for consequential decisions.",
       ],
       metric: "125+ hours",
       metricLabel: "estimated annual review time saved by the Sales Operations agent alone",
       impactTitle: "A repeatable model for identifying GTM work that can be automated safely.",
+      pullQuote: "The hardest part was not the AI — it was translating commercial judgement into reliable operating logic.",
       impacts: ["Rules made explicit", "Exceptions surfaced for review", "Commercial meaning considered", "Human judgement retained"],
       signals: ["AI automation", "Hands-on build", "Commercial logic", "Testing & iteration", "Governance", "Measurable efficiency"],
     },
@@ -71,6 +85,7 @@ export const relayPortfolio = {
       number: "03",
       eyebrow: "CRM TRANSFORMATION · SIMPLIFICATION",
       title: "Consolidating two HubSpot environments",
+      relevance: ["Systems simplification", "CRM transformation", "Cost optimisation", "Adoption"],
       challenge:
         "Two HubSpot instances created fragmented lifecycle data, duplicated processes and unnecessary licensing complexity across approximately 7,000 contacts.",
       actions: [
@@ -93,6 +108,7 @@ export const relayPortfolio = {
     {
       number: "04",
       title: "Turning commercial controls into scalable systems",
+      relevance: ["Commercial governance", "Deal Desk foundations", "Exception handling", "Finance alignment"],
       challenge: "Salesforce and Xero information needed to reconcile reliably before month-end across invoices, account codes, opportunities, contract dates and revenue-recognition information.",
       contribution: "I established recurring controls, defined what should match across CRM and Finance, investigated discrepancies and edge cases, worked with Finance to correct issues before close, and strengthened Salesforce governance to reduce recurrence. I later translated parts of this logic into automated Sales Operations checks.",
       outcome: "A repeatable control framework that identifies discrepancies before financial reporting rather than relying on post-close correction.",
@@ -101,6 +117,7 @@ export const relayPortfolio = {
     {
       number: "05",
       title: "Building operational visibility in Salesforce",
+      relevance: ["Scalable automation", "Operational visibility", "Process reliability"],
       challenge: "The business needed to understand how Revenue Recognition records changed over time, including comparison with the state seven days earlier.",
       contribution: "I designed the custom Snapshot RR Change structure, built scheduled Salesforce automation, created current-versus-seven-days-ago and reverse-path comparison logic, and introduced a unique Run Key to prevent duplicate processing. I refined the design as data volumes increased.",
       outcome: "Automated historical change visibility across approximately 340 daily snapshots and created a repeatable audit trail, removing the need to reconstruct changes manually.",
@@ -116,21 +133,23 @@ export const relayPortfolio = {
   change: {
     title: "Building while the organisation changes",
     introduction:
-      "In July 2026, Ascertia became fully owned by InfoCert, part of Tinexta Group. Organisational structures, priorities and ways of working continued to evolve while core commercial operations still needed to run reliably.",
+      "In July 2026, Ascertia became fully owned by InfoCert, part of Tinexta Group. The transition changed priorities, stakeholders and ways of working while forecasting, governance, reporting and month-end controls still needed to run reliably.",
     framework: [
       { label: "Stabilise", body: "Protect the operating cadences and controls the business still depends on." },
       { label: "Adapt", body: "Adjust governance, stakeholders and requirements as the group model develops." },
       { label: "Keep building", body: "Continue improving processes where the direction and business value remain clear." },
     ],
-    body: "I continued running and improving forecasting, governance, reporting and commercial systems while adapting to changing stakeholders and operating requirements.",
+    body: "I separated what required stability from what needed to adapt, and continued improving commercial systems rather than waiting for every organisational variable to settle.",
+    stability: "I can keep core operations stable while priorities, ownership and ways of working are changing.",
     takeaway: "I am comfortable building before every variable is known.",
     signals: ["Ambiguity", "Pace", "Adaptability", "Ownership", "Operational resilience"],
   },
   principles: [
-    { number: "01", title: "Solve the business problem, not the requested feature", body: "Understand the decision or outcome before selecting the tool." },
-    { number: "02", title: "Build where it creates differentiation", body: "Buy where the market has already solved it; avoid both SaaS sprawl and unnecessary custom complexity." },
-    { number: "03", title: "Automate repetition, not judgement", body: "Use automation where rules are clear and preserve human review where risk or ambiguity matters." },
-    { number: "04", title: "A process succeeds when people use it", body: "Adoption, simplicity and behaviour matter as much as technical correctness." },
+    { number: "01", title: "Start with the commercial problem", body: "Do not start with the requested feature or tool." },
+    { number: "02", title: "Build the simplest thing that solves it", body: "Avoid unnecessary platform and process complexity." },
+    { number: "03", title: "Buy common capabilities; build differentiated logic", body: "Use mature tools where the market has already solved the problem." },
+    { number: "04", title: "Automate repetition, not judgement", body: "Keep human review where ambiguity or commercial risk matters." },
+    { number: "05", title: "Adoption is part of the build", body: "A technically correct process that people avoid is not a successful process." },
   ],
   microCase: {
     title: "Knowing when to stop",

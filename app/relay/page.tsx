@@ -25,8 +25,8 @@ export default function RelayPage() {
         <Link href="/relay" className={styles.wordmark} aria-label="Miriam Gonzalez, Relay portfolio">MG</Link>
         <nav className={styles.nav} aria-label="Page navigation">
           <a href="#method">How I build</a>
+          <a href="#flow">Commercial flow</a>
           <a href="#work">Selected work</a>
-          <a href="#experience">Commercial scope</a>
           <a href="#principles">Principles</a>
         </nav>
         <a className={styles.headerLink} href={content.profile.linkedIn} target="_blank" rel="noreferrer">
@@ -37,8 +37,9 @@ export default function RelayPage() {
       <div id="main-content">
         <section className={styles.hero} aria-labelledby="hero-title">
           <div className={styles.heroCopy}>
-            <p className={styles.eyebrow}>{content.profile.positioning}</p>
+            <p className={styles.eyebrow}>{content.profile.context}</p>
             <p className={styles.name}>{content.profile.name}</p>
+            <p className={styles.roleLine}>{content.profile.positioning}</p>
             <h1 id="hero-title">{content.profile.headline}</h1>
             <p className={styles.lede}>{content.profile.introduction}</p>
             <a className={styles.primaryButton} href="#method">See how I build <ArrowIcon /></a>
@@ -81,10 +82,35 @@ export default function RelayPage() {
           </ol>
         </section>
 
+        <section className={styles.flowSection} id="flow" aria-labelledby="flow-title">
+          <div className={styles.motionView}>
+            <p className={styles.overline}>ENTERPRISE + PITSTOP · COMMERCIAL OPERATING MODEL</p>
+            <h2 id="flow-title">{content.salesMotions.title}</h2>
+            <p>{content.salesMotions.body}</p>
+          </div>
+          <div className={styles.flowModel}>
+            <p className={styles.flowLabel}>TAM → CRM → COMMERCIAL GOVERNANCE</p>
+            <ol>
+              {content.commercialFlow.steps.map((step, index) => (
+                <li key={step}>
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                  <strong>{step}</strong>
+                </li>
+              ))}
+            </ol>
+            <p className={styles.flowNote}>{content.commercialFlow.note}</p>
+          </div>
+        </section>
+
         <section className={styles.workSection} id="work" aria-labelledby="work-title">
           <div className={styles.sectionHeading}>
             <p className={styles.overline}>SELECTED WORK</p>
             <h2 id="work-title">Built around commercial problems, not software features.</h2>
+          </div>
+
+          <div className={styles.whyExamples}>
+            <h3>{content.whyExamples.title}</h3>
+            <p>{content.whyExamples.body}</p>
           </div>
 
           <div className={styles.flagshipList}>
@@ -95,6 +121,7 @@ export default function RelayPage() {
                   <div>
                     <p className={styles.caseEyebrow}>{caseStudy.eyebrow}</p>
                     <h3>{caseStudy.title}</h3>
+                    <p className={styles.relevance}><strong>Relevant to Relay:</strong> {caseStudy.relevance.join(" · ")}</p>
                   </div>
                 </div>
 
@@ -124,6 +151,7 @@ export default function RelayPage() {
                     )}
                     <p className={styles.impactTitle}>{caseStudy.impactTitle}</p>
                     {caseStudy.impacts.length > 0 && <ul>{caseStudy.impacts.map((impact) => <li key={impact}>{impact}</li>)}</ul>}
+                    {"pullQuote" in caseStudy && caseStudy.pullQuote && <blockquote className={styles.caseQuote}>{caseStudy.pullQuote}</blockquote>}
                   </aside>
                 </div>
 
@@ -140,6 +168,7 @@ export default function RelayPage() {
               <article className={styles.secondaryCase} key={caseStudy.number}>
                 <span className={styles.caseNumber}>{caseStudy.number}</span>
                 <h3>{caseStudy.title}</h3>
+                <p className={styles.secondaryRelevance}><strong>Relevant to Relay:</strong> {caseStudy.relevance.join(" · ")}</p>
                 <div><h4>Challenge</h4><p>{caseStudy.challenge}</p></div>
                 <div><h4>What I did</h4><p>{caseStudy.contribution}</p></div>
                 <div className={styles.outcome}><h4>Impact</h4><p>{caseStudy.outcome}</p></div>
@@ -182,6 +211,7 @@ export default function RelayPage() {
             ))}
           </div>
           <p className={styles.changeBody}>{content.change.body}</p>
+          <p className={styles.stabilityLine}>{content.change.stability}</p>
           <blockquote>{content.change.takeaway}</blockquote>
           <ul className={styles.changeSignals}>{content.change.signals.map((signal) => <li key={signal}>{signal}</li>)}</ul>
         </section>
@@ -223,7 +253,8 @@ export default function RelayPage() {
         <section className={styles.closing} aria-labelledby="closing-title">
           <p className={styles.overline}>MIRIAM GONZALEZ · SENIOR SALES OPERATIONS MANAGER</p>
           <h2 id="closing-title">I build commercial operations by starting with the problem, defining the operating model and making the solution work in practice.</h2>
-          <p>{content.profile.location}</p>
+          <p>Selected work prepared for the Relay Technologies Sales Operations Manager process.</p>
+          <p className={styles.closingIdentity}>{content.profile.name} · {content.profile.location}</p>
           <div className={styles.actions}>
             <a className={styles.primaryButton} href={content.profile.linkedIn} target="_blank" rel="noreferrer">LinkedIn <ArrowIcon external /></a>
             <a className={styles.secondaryButton} href={`mailto:${content.profile.email}`}>Email Miriam</a>
