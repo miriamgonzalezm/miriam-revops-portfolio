@@ -226,7 +226,7 @@
 .compactSignals li { padding: 0.38rem 0.55rem; border: 1px solid var(--line); color: var(--muted); font-size: 0.68rem; }
 
 .experienceSection { padding: clamp(5rem, 9vw, 8rem) 0; border-top: 1px solid var(--line); }
-.experienceGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; border: 1px solid var(--line); background: var(--line); }
+.experienceGrid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; border: 1px solid var(--line); background: var(--line); }
 .experienceGrid article { min-height: 260px; padding: 1.5rem; background: var(--surface); }
 .experienceGrid article > span { color: var(--copper); font-size: 0.75rem; font-weight: 800; }
 .experienceGrid h3 { margin: 3.2rem 0 0.8rem; font-size: 1.2rem; line-height: 1.2; }
@@ -243,7 +243,6 @@
 .changeFramework h3 { margin: 3rem 0 0.7rem; font-size: 1.2rem; }
 .changeFramework p { margin: 0; color: #c4d0d7; font-size: 0.88rem; }
 .changeBody { max-width: 780px; margin: 2.5rem 0 0 auto; color: #c4d0d7; }
-.stabilityLine { max-width: 780px; margin: 1.2rem 0 0 auto; color: white; font-weight: 800; }
 .changeSection blockquote { max-width: 850px; margin: 2.5rem 0 0 auto; padding-left: 1.4rem; border-left: 5px solid var(--copper); font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.8rem, 3.5vw, 3.1rem); line-height: 1.15; }
 .changeSignals { justify-content: flex-end; margin-top: 2rem; }
 .changeSignals li { padding: 0.42rem 0.62rem; border: 1px solid rgba(255,255,255,0.22); color: #c4d0d7; font-size: 0.7rem; }
@@ -291,6 +290,7 @@
   .caseBody { grid-template-columns: 1fr 1.2fr; }
   .impactBlock { grid-column: 1 / -1; }
   .experienceGrid { grid-template-columns: repeat(2, 1fr); }
+  .experienceGrid article:last-child { grid-column: 1 / -1; min-height: 210px; }
   .systemsSection { grid-template-columns: 1fr; }
 }
 
@@ -337,6 +337,7 @@
   .methodGrid li { min-height: 0; }
   .methodGrid li:last-child { grid-column: auto; min-height: 0; }
   .principlesGrid article:last-child { grid-column: auto; min-height: 0; }
+  .experienceGrid article:last-child { grid-column: auto; min-height: 0; }
   .methodGrid h3 { margin-top: 2.4rem; }
   .connector { display: none; }
   .caseHeader { grid-template-columns: 1fr; padding: 1.5rem; }

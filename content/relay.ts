@@ -30,11 +30,11 @@ export const relayPortfolio = {
   },
   salesMotions: {
     title: "Different motions need different operating models",
-    body: "I would not assume Enterprise and high-volume field motions should use the same process simply because they share a CRM. Enterprise operations tend to depend more on account prioritisation, deal progression and commercial governance; higher-volume motions depend more on coverage, routing, conversion and repeatability. I prefer a common data foundation with different workflows where the selling behaviour genuinely differs.",
+    body: "My starting assumption would be that Enterprise and high-volume field motions should not automatically share the same workflow simply because they share a CRM. Enterprise may place greater emphasis on account prioritisation, deal progression and commercial governance, while higher-volume motions may depend more heavily on coverage, routing, conversion and repeatability. I would validate those assumptions with the teams and the data, then preserve a common data foundation while allowing workflows to reflect genuine differences in selling behaviour.",
   },
   commercialFlow: {
     steps: ["Addressable market", "Prioritisation", "Engagement", "CRM progression", "Commercial governance", "Close / hand-off", "Measure & improve"],
-    note: "My strongest direct experience sits across segmentation, outbound targeting, CRM design, commercial governance and automation. Formal end-to-end TAM ownership and a dedicated Deal Desk would be natural extensions of this work.",
+    note: "My strongest direct experience sits across segmentation, outbound targeting, CRM design, commercial governance and automation.",
   },
   flagshipCases: [
     {
@@ -129,6 +129,7 @@ export const relayPortfolio = {
     { title: "Commercial Planning", body: "Partner with the Sales Director on quota planning using recurring revenue, retention, pipeline, expected deal mix and seller performance." },
     { title: "Commercial Governance", body: "Own recurring controls across direct and partner-led business, including opportunity governance, sales compensation and Finance alignment." },
     { title: "Channel & Partner Operations", body: "Support partner attribution, opportunity governance and commercial processes across partner-led business." },
+    { title: "Cross-functional Delivery", body: "Translate commercial requirements into systems and process changes with Sales, Finance, Marketing, Customer Success and Systems stakeholders." },
   ],
   change: {
     title: "Building while the organisation changes",
@@ -140,7 +141,6 @@ export const relayPortfolio = {
       { label: "Keep building", body: "Continue improving processes where the direction and business value remain clear." },
     ],
     body: "I separated what required stability from what needed to adapt, and continued improving commercial systems rather than waiting for every organisational variable to settle.",
-    stability: "I can keep core operations stable while priorities, ownership and ways of working are changing.",
     takeaway: "I am comfortable building before every variable is known.",
     signals: ["Ambiguity", "Pace", "Adaptability", "Ownership", "Operational resilience"],
   },

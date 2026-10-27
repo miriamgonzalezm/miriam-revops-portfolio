@@ -66,7 +66,7 @@ export default function RelayPage() {
         <section className={styles.methodSection} id="method" aria-labelledby="method-title">
           <div className={styles.sectionHeading}>
             <p className={styles.overline}>HOW I WORK</p>
-            <h2 id="method-title">Define what good looks like. Then build it.</h2>
+            <h2 id="method-title">From commercial problem to working solution.</h2>
           </div>
           <ol className={styles.methodGrid}>
             {content.method.map((step, index) => (
@@ -211,7 +211,6 @@ export default function RelayPage() {
             ))}
           </div>
           <p className={styles.changeBody}>{content.change.body}</p>
-          <p className={styles.stabilityLine}>{content.change.stability}</p>
           <blockquote>{content.change.takeaway}</blockquote>
           <ul className={styles.changeSignals}>{content.change.signals.map((signal) => <li key={signal}>{signal}</li>)}</ul>
         </section>
