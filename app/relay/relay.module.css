@@ -193,6 +193,7 @@
 .impactBlock { background: #12344a; }
 .impactTitle { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; line-height: 1.35; }
 .impactBlock ul { margin-top: 1.3rem; color: #c6d3da; font-size: 0.78rem; }
+.caseProofLine { margin: 1.2rem 0 0; color: var(--copper-light); font-size: 0.72rem; font-weight: 800; line-height: 1.5; }
 .singleMetric { margin-bottom: 1.8rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.18); }
 .singleMetric strong,
 .metricPair strong { display: block; color: var(--copper-light); font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.2rem, 4vw, 4rem); font-weight: 400; line-height: 0.95; }

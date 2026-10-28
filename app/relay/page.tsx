@@ -146,6 +146,7 @@ export default function RelayPage() {
                     )}
                     <p className={styles.impactTitle}>{caseStudy.impactTitle}</p>
                     {caseStudy.impacts.length > 0 && <ul>{caseStudy.impacts.map((impact) => <li key={impact}>{impact}</li>)}</ul>}
+                    {"proofLine" in caseStudy && caseStudy.proofLine && <p className={styles.caseProofLine}>{caseStudy.proofLine}</p>}
                     {"pullQuote" in caseStudy && caseStudy.pullQuote && <blockquote className={styles.caseQuote}>{caseStudy.pullQuote}</blockquote>}
                   </aside>
                 </div>
