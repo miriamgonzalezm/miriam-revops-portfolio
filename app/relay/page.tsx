@@ -108,11 +108,6 @@ export default function RelayPage() {
             <h2 id="work-title">Built around commercial problems, not software features.</h2>
           </div>
 
-          <div className={styles.whyExamples}>
-            <h3>{content.whyExamples.title}</h3>
-            <p>{content.whyExamples.body}</p>
-          </div>
-
           <div className={styles.flagshipList}>
             {content.flagshipCases.map((caseStudy) => (
               <article className={styles.flagshipCase} key={caseStudy.number}>
@@ -152,29 +147,25 @@ export default function RelayPage() {
                     <p className={styles.impactTitle}>{caseStudy.impactTitle}</p>
                     {caseStudy.impacts.length > 0 && <ul>{caseStudy.impacts.map((impact) => <li key={impact}>{impact}</li>)}</ul>}
                     {"pullQuote" in caseStudy && caseStudy.pullQuote && <blockquote className={styles.caseQuote}>{caseStudy.pullQuote}</blockquote>}
+                    {"closingNote" in caseStudy && caseStudy.closingNote && <p className={styles.closingNote}>{caseStudy.closingNote}</p>}
                   </aside>
-                </div>
-
-                <div className={styles.signals}>
-                  <span>What this demonstrates</span>
-                  <ul>{caseStudy.signals.map((signal) => <li key={signal}>{signal}</li>)}</ul>
                 </div>
               </article>
             ))}
           </div>
 
-          <div className={styles.secondaryGrid}>
-            {content.secondaryCases.map((caseStudy) => (
-              <article className={styles.secondaryCase} key={caseStudy.number}>
-                <span className={styles.caseNumber}>{caseStudy.number}</span>
-                <h3>{caseStudy.title}</h3>
-                <p className={styles.secondaryRelevance}><strong>Relevant to Relay:</strong> {caseStudy.relevance.join(" · ")}</p>
-                <div><h4>Challenge</h4><p>{caseStudy.challenge}</p></div>
-                <div><h4>What I did</h4><p>{caseStudy.contribution}</p></div>
-                <div className={styles.outcome}><h4>Impact</h4><p>{caseStudy.outcome}</p></div>
-                <ul className={styles.compactSignals}>{caseStudy.signals.map((signal) => <li key={signal}>{signal}</li>)}</ul>
-              </article>
-            ))}
+          <div className={styles.additionalProof}>
+            <h3>Additional proof</h3>
+            <div className={styles.proofCards}>
+              {content.additionalProof.map((item) => (
+                <article key={item.title}>
+                  <p className={styles.additionalLabel}>{item.title}</p>
+                  <h4>{item.subtitle}</h4>
+                  <p>{item.body}</p>
+                  <p className={styles.additionalRelevance}><strong>Relevant to:</strong> {item.relevance.join(" · ")}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -182,7 +173,6 @@ export default function RelayPage() {
           <div className={styles.sectionHeading}>
             <p className={styles.overline}>COMMERCIAL OPERATING EXPERIENCE</p>
             <h2 id="experience-title">The systems work is grounded in the sales motion.</h2>
-            <p>I build systems with direct responsibility for the commercial processes they support.</p>
           </div>
           <div className={styles.experienceGrid}>
             {content.commercialExperience.map((area, index) => (
@@ -201,18 +191,7 @@ export default function RelayPage() {
             <h2 id="change-title">{content.change.title}</h2>
             <p>{content.change.introduction}</p>
           </div>
-          <div className={styles.changeFramework}>
-            {content.change.framework.map((item, index) => (
-              <article key={item.label}>
-                <span>0{index + 1}</span>
-                <h3>{item.label}</h3>
-                <p>{item.body}</p>
-              </article>
-            ))}
-          </div>
-          <p className={styles.changeBody}>{content.change.body}</p>
           <blockquote>{content.change.takeaway}</blockquote>
-          <ul className={styles.changeSignals}>{content.change.signals.map((signal) => <li key={signal}>{signal}</li>)}</ul>
         </section>
 
         <section className={styles.principlesSection} id="principles" aria-labelledby="principles-title">
@@ -229,11 +208,6 @@ export default function RelayPage() {
               </article>
             ))}
           </div>
-          <aside className={styles.microCase}>
-            <div><p className={styles.overline}>COMMERCIAL JUDGEMENT</p><h3>{content.microCase.title}</h3></div>
-            <p>{content.microCase.body}</p>
-            <blockquote>{content.microCase.quote}</blockquote>
-          </aside>
         </section>
 
         <section className={styles.systemsSection} aria-labelledby="systems-title">
@@ -252,7 +226,6 @@ export default function RelayPage() {
         <section className={styles.closing} aria-labelledby="closing-title">
           <p className={styles.overline}>MIRIAM GONZALEZ · SENIOR SALES OPERATIONS MANAGER</p>
           <h2 id="closing-title">I build commercial operations by starting with the problem, defining the operating model and making the solution work in practice.</h2>
-          <p>Selected work prepared for the Relay Technologies Sales Operations Manager process.</p>
           <p className={styles.closingIdentity}>{content.profile.name} · {content.profile.location}</p>
           <div className={styles.actions}>
             <a className={styles.primaryButton} href={content.profile.linkedIn} target="_blank" rel="noreferrer">LinkedIn <ArrowIcon external /></a>
