@@ -51,7 +51,6 @@ export const relayPortfolio = {
         "Clear qualification, routing and ownership",
         "Consistent segmentation, exclusions and suppression",
       ],
-      closingNote: "When resourcing constraints and deliverability considerations later changed the business case, I supported the decision not to renew Apollo.io rather than defending the original investment.",
     },
     {
       number: "02",

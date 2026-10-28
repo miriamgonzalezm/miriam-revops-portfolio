@@ -200,8 +200,6 @@
 .metricPair span { display: block; margin-top: 0.65rem; color: #b9c8d1; font-size: 0.68rem; line-height: 1.45; letter-spacing: 0.05em; text-transform: uppercase; }
 .metricPair { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-bottom: 1.8rem; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.18); }
 .caseQuote { margin: 1.5rem 0 0; padding: 1rem 0 0 1rem; border-top: 1px solid rgba(255,255,255,0.18); border-left: 3px solid var(--copper); color: white; font-family: Georgia, "Times New Roman", serif; font-size: 1.05rem; line-height: 1.35; }
-.closingNote { margin: 1.35rem 0 0; padding-top: 1.15rem; border-top: 1px solid rgba(255,255,255,0.18); color: #c6d3da; font-size: 0.78rem; line-height: 1.5; }
-
 .additionalProof { margin-top: 3.5rem; }
 .additionalProof > h3 { margin: 0 0 1.3rem; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2rem, 3.4vw, 3rem); font-weight: 400; letter-spacing: -0.035em; }
 .proofCards { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; border: 1px solid var(--line); background: var(--line); }
