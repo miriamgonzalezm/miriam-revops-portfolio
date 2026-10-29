@@ -123,7 +123,7 @@ export const relayPortfolio = {
   commercialExperience: [
     { title: "Forecasting & Pipeline", body: "Own the seller forecasting cadence and lead forecast reviews covering expected close, deal movement, pipeline risk and changes in outlook." },
     { title: "Commercial Planning", body: "Partner with the Sales Director on quota planning using recurring revenue, retention, pipeline, expected deal mix and seller performance." },
-    { title: "Commercial Governance", body: "Own recurring controls across direct and partner-led business, including opportunity governance, sales compensation and Finance alignment." },
+    { title: "Commercial Governance", body: "Own recurring controls across direct and partner-led business, including opportunity governance, commercial approvals, sales compensation and Finance alignment." },
     { title: "Channel & Partner Operations", body: "Support partner attribution, opportunity governance and commercial processes across partner-led business." },
     { title: "Cross-functional Delivery", body: "Translate commercial requirements into systems and process changes with Sales, Finance, Marketing, Customer Success and Systems stakeholders." },
   ],

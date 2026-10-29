@@ -116,7 +116,7 @@ export default function RelayPage() {
                   <div>
                     <p className={styles.caseEyebrow}>{caseStudy.eyebrow}</p>
                     <h3>{caseStudy.title}</h3>
-                    <p className={styles.relevance}><strong>Relevant to Relay:</strong> {caseStudy.relevance.join(" · ")}</p>
+                    <p className={styles.relevance}>{caseStudy.relevance.join(" · ")}</p>
                   </div>
                 </div>
 
@@ -225,7 +225,7 @@ export default function RelayPage() {
 
         <section className={styles.closing} aria-labelledby="closing-title">
           <p className={styles.overline}>MIRIAM GONZALEZ · SENIOR SALES OPERATIONS MANAGER</p>
-          <h2 id="closing-title">I build commercial operations by starting with the problem, defining the operating model and making the solution work in practice.</h2>
+          <h2 id="closing-title">I build commercial operations by starting with the problem, defining the operating model and turning it into systems that people actually use.</h2>
           <p className={styles.closingIdentity}>{content.profile.name} · {content.profile.location}</p>
           <div className={styles.actions}>
             <a className={styles.primaryButton} href={content.profile.linkedIn} target="_blank" rel="noreferrer">LinkedIn <ArrowIcon external /></a>
