@@ -49,7 +49,6 @@ export default function RelayPage() {
           <aside className={styles.proofPanel} aria-label="Candidate evidence summary">
             <div className={styles.proofPanelTop}>
               <span>Evidence at a glance</span>
-              <span>Relevant to Relay</span>
             </div>
             <div className={styles.proofGrid}>
               {content.proof.map((item) => (
@@ -87,6 +86,7 @@ export default function RelayPage() {
             <p className={styles.overline}>ENTERPRISE + PITSTOP · COMMERCIAL OPERATING MODEL</p>
             <h2 id="flow-title">{content.salesMotions.title}</h2>
             <p>{content.salesMotions.body}</p>
+            <blockquote className={styles.motionQuote}>{content.salesMotions.pullQuote}</blockquote>
           </div>
           <div className={styles.flowModel}>
             <p className={styles.flowLabel}>TAM → CRM → COMMERCIAL GOVERNANCE</p>

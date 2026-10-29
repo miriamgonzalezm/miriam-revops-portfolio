@@ -149,7 +149,7 @@
 .sectionHeading > p:last-child:not(.overline) { max-width: 700px; margin: 1.3rem 0 0; color: var(--muted); font-size: 1.02rem; }
 
 .methodSection { padding: clamp(4rem, 7vw, 6rem) 0; border-top: 1px solid var(--line); }
-.methodGrid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1px; margin: 0; padding: 0; list-style: none; background: var(--line); border: 1px solid var(--line); }
+.methodGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin: 0; padding: 0; list-style: none; background: var(--line); border: 1px solid var(--line); }
 .methodGrid li { min-height: 230px; padding: 1.45rem; background: var(--surface); }
 .methodTop { display: flex; align-items: center; justify-content: space-between; color: var(--copper); font-size: 0.75rem; font-weight: 800; }
 .connector { font-size: 1.2rem; }
@@ -158,7 +158,8 @@
 
 .flowSection { display: grid; grid-template-columns: 0.78fr 1.22fr; gap: clamp(3rem, 8vw, 8rem); align-items: start; padding: clamp(4rem, 7vw, 6rem) 0; border-top: 1px solid var(--line); }
 .motionView h2 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp(2.5rem, 4.6vw, 4.6rem); font-weight: 400; line-height: 1; letter-spacing: -0.05em; text-wrap: balance; }
-.motionView > p:last-child { margin: 1.5rem 0 0; color: var(--muted); }
+.motionView > p:not(.overline) { margin: 1.5rem 0 0; color: var(--muted); }
+.motionQuote { margin: 1.5rem 0 0; padding-left: 1rem; border-left: 3px solid var(--copper); color: var(--ink); font-family: Georgia, "Times New Roman", serif; font-size: 1.25rem; line-height: 1.35; }
 .flowModel { padding: 1.7rem; color: white; background: var(--ink-deep); }
 .flowLabel { margin: 0 0 1.2rem; color: var(--copper-light); font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em; }
 .flowModel ol { margin: 0; padding: 0; list-style: none; border-top: 1px solid rgba(255,255,255,0.17); }
