@@ -105,27 +105,27 @@ export const repriskPortfolio = {
     },
     {
       number: "03",
-      eyebrow: "MEDDIC · OPPORTUNITY MANAGEMENT",
+      eyebrow: "SALES METHODOLOGY · OPPORTUNITY MANAGEMENT",
       title: "Sales methodology: MEDDIC today, SPICED at RepRisk",
       relevance: ["MEDDIC", "Qualification", "Opportunity quality", "Forecast discipline"],
       challenge:
         "A methodology only improves execution when qualification evidence is captured consistently and becomes part of opportunity reviews, forecasting and seller behaviour.",
       actions: [
-        "Partnering with the Sales Director to implement MEDDIC as part of a wider sales-process project.",
+        "Worked with the Sales Director to implement MEDDIC as part of a wider sales-process project.",
         "Translating qualification expectations into clearer Salesforce fields, stage requirements and review conversations.",
-        "Using the work to improve CRM completion and the quality of opportunity information available to leadership.",
+        "Using an AI agent to identify and draft missing MEDDIC fields from call notes, with sellers reviewing and confirming the proposed content.",
         "Ran an extended Gong proof of concept to assess conversation intelligence and deal-risk signals alongside the methodology work.",
       ],
       impactTitle:
-        "Building MEDDIC into the operating rhythm so it supports opportunity quality and judgement rather than existing as a separate training framework.",
-      proofLine: "Current status · implementation in progress with the Sales Director",
+        "The MEDDIC implementation is substantially complete; the current focus is adoption, consistent field completion and use in pipeline reviews.",
+      proofLine: "Current focus · adoption, field completion and use in pipeline reviews",
       pullQuote: "Methodology creates value when it changes what sellers capture, discuss and decide.",
       impacts: [],
     },
   ],
   spiced: {
     introduction:
-      "At Ascertia I'm rolling out MEDDIC with our Sales Director. This is how I'd bring the same discipline to SPICED at RepRisk, as a starting point to refine with your SPICED consultant.",
+      "At Ascertia, the MEDDIC implementation is substantially complete and the current focus is adoption, field completion and use in pipeline reviews. This is how I'd bring the same discipline to SPICED at RepRisk, as a starting point to refine with your SPICED consultant.",
     stages: [
       { stage: "Discovery", captured: "Situation, Pain", exitCriteria: "Pain confirmed by the customer" },
       { stage: "Qualification", captured: "Impact, Critical Event", exitCriteria: "Impact quantified, date known" },

@@ -1,6 +1,6 @@
 .spicedSection {
-  width: min(1200px, calc(100% - 3rem));
-  margin-inline: auto;
+  width: 100%;
+  margin-top: 3.5rem;
   padding: clamp(4rem, 7vw, 6rem) 0;
   border-top: 1px solid var(--line);
 }
@@ -132,10 +132,6 @@
 }
 
 @media (max-width: 600px) {
-  .spicedSection {
-    width: min(1200px, calc(100% - 2rem));
-  }
-
   .tableFrame {
     overflow: visible;
     border: 0;

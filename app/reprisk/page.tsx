@@ -138,6 +138,45 @@ export default function RepRiskPage() {
             ))}
           </div>
 
+          <section className={repriskStyles.spicedSection} aria-labelledby="spiced-title">
+            <div className={repriskStyles.spicedHeading}>
+              <p className={styles.overline}>SALES METHODOLOGY IN THE OPERATING MODEL</p>
+              <h2 id="spiced-title">Operationalising SPICED in Salesforce</h2>
+              <p>{content.spiced.introduction}</p>
+            </div>
+
+            <div className={repriskStyles.tableFrame}>
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Stage</th>
+                    <th scope="col">SPICED captured</th>
+                    <th scope="col">Exit criteria</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {content.spiced.stages.map((row) => (
+                    <tr key={row.stage}>
+                      <th scope="row" data-label="Stage">{row.stage}</th>
+                      <td data-label="SPICED captured">{row.captured}</td>
+                      <td data-label="Exit criteria">{row.exitCriteria}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className={repriskStyles.spicedLegend}>{content.spiced.legend}</p>
+
+            <div className={repriskStyles.spicedPoints}>
+              {content.spiced.operatingPoints.map((point, index) => (
+                <article key={point}>
+                  <span>0{index + 1}</span>
+                  <p>{point}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
           <div className={styles.additionalProof}>
             <h3>Additional operating proof</h3>
             <div className={styles.proofCards}>
@@ -150,45 +189,6 @@ export default function RepRiskPage() {
                 </article>
               ))}
             </div>
-          </div>
-        </section>
-
-        <section className={repriskStyles.spicedSection} aria-labelledby="spiced-title">
-          <div className={repriskStyles.spicedHeading}>
-            <p className={styles.overline}>SALES METHODOLOGY IN THE OPERATING MODEL</p>
-            <h2 id="spiced-title">Operationalising SPICED in Salesforce</h2>
-            <p>{content.spiced.introduction}</p>
-          </div>
-
-          <div className={repriskStyles.tableFrame}>
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Stage</th>
-                  <th scope="col">SPICED captured</th>
-                  <th scope="col">Exit criteria</th>
-                </tr>
-              </thead>
-              <tbody>
-                {content.spiced.stages.map((row) => (
-                  <tr key={row.stage}>
-                    <th scope="row" data-label="Stage">{row.stage}</th>
-                    <td data-label="SPICED captured">{row.captured}</td>
-                    <td data-label="Exit criteria">{row.exitCriteria}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-          <p className={repriskStyles.spicedLegend}>{content.spiced.legend}</p>
-
-          <div className={repriskStyles.spicedPoints}>
-            {content.spiced.operatingPoints.map((point, index) => (
-              <article key={point}>
-                <span>0{index + 1}</span>
-                <p>{point}</p>
-              </article>
-            ))}
           </div>
         </section>
 
