@@ -98,14 +98,14 @@ export const repriskPortfolio = {
       ],
       impactTitle:
         "Created a migration approach grounded in real product, pricing, approval and lead-to-cash requirements rather than a lift-and-shift of the current configuration.",
-      proofLine: "Current status · hands-on preparation and migration design · production implementation not yet started",
+      proofLine: "Current focus · hands-on Revenue Cloud preparation, product catalogue redesign and migration planning",
       pullQuote: "A platform migration is an opportunity to remove complexity, not preserve it in a new data model.",
       impacts: [],
     },
     {
       number: "03",
       eyebrow: "MEDDIC · OPPORTUNITY MANAGEMENT",
-      title: "Turning sales methodology into CRM behaviour",
+      title: "Sales methodology: MEDDIC today, SPICED at RepRisk",
       relevance: ["MEDDIC", "Qualification", "Opportunity quality", "Forecast discipline"],
       challenge:
         "A methodology only improves execution when qualification evidence is captured consistently and becomes part of opportunity reviews, forecasting and seller behaviour.",
@@ -122,6 +122,23 @@ export const repriskPortfolio = {
       impacts: [],
     },
   ],
+  spiced: {
+    introduction:
+      "At Ascertia I'm rolling out MEDDIC with our Sales Director. This is how I'd bring the same discipline to SPICED at RepRisk, as a starting point to refine with your SPICED consultant.",
+    stages: [
+      { stage: "Discovery", captured: "Situation, Pain", exitCriteria: "Pain confirmed by the customer" },
+      { stage: "Qualification", captured: "Impact, Critical Event", exitCriteria: "Impact quantified, date known" },
+      { stage: "Proposal", captured: "Decision", exitCriteria: "Decision process and criteria mapped" },
+      { stage: "Close", captured: "All five reviewed", exitCriteria: "Ready for deal desk" },
+    ],
+    legend: "S = Situation · P = Pain · I = Impact · C = Critical Event · D = Decision",
+    operatingPoints: [
+      "In Salesforce: SPICED fields on the opportunity, Path guidance per stage, and validation rules as exit criteria.",
+      "Beyond new business: as a subscription business, the same Pain and Impact carry into renewals and expansion, so Client Growth knows why the customer bought.",
+      "Linked to pricing: Impact and Critical Event become the justification for discount approvals in deal desk, so pricing exceptions are tied to customer value.",
+      "Adoption: a SPICED completion dashboard by stage and seller, reviewed in pipeline calls, plus an AI assist that drafts SPICED fields from call notes for the seller to confirm.",
+    ],
+  },
   additionalProof: [
     {
       title: "Commercial exception governance",
@@ -132,7 +149,7 @@ export const repriskPortfolio = {
     {
       title: "Lead-to-cash assurance",
       subtitle: "Salesforce ↔ Xero controls",
-      body: "Run recurring controls across approved quotes, opportunities, invoices, account codes, contract dates, licences and revenue-recognition information to identify discrepancies before close.",
+      body: "Recurring checks across quotes, invoices, contract dates and licences, plus monthly revenue-recognition support: I prepare and validate the Salesforce reports Finance uses for accrued and deferred revenue, then reconcile discrepancies with the Financial Controller against Xero mid-month.",
       relevance: ["Data integrity", "Finance alignment", "Exception handling"],
     },
     {
@@ -202,6 +219,11 @@ export const repriskPortfolio = {
       title: "Keep judgement visible",
       body: "Automate repeatable checks while retaining human review for ambiguity and commercial risk.",
     },
+    {
+      number: "06",
+      title: "Own the design, partner on delivery",
+      body: "Own the design and requirements, work alongside the implementation partner, and build what doesn't need them, so knowledge stays in-house.",
+    },
   ],
   systems: [
     "Salesforce Sales Cloud",
@@ -218,5 +240,6 @@ export const repriskPortfolio = {
   certifications: [
     "Salesforce Certified Administrator",
     "Salesforce Certified Sales Cloud Consultant",
+    "Salesforce Revenue Management Consultant · In progress",
   ],
 } as const;

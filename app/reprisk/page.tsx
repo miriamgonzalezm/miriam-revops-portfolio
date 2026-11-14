@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowIcon } from "@/components/ArrowIcon";
 import { repriskPortfolio as content } from "@/content/reprisk";
 import styles from "../relay/relay.module.css";
+import repriskStyles from "./reprisk.module.css";
 
 export const metadata: Metadata = {
   title: "Miriam Gonzalez | GTM Operations, CPQ & Revenue Cloud",
@@ -152,6 +153,45 @@ export default function RepRiskPage() {
           </div>
         </section>
 
+        <section className={repriskStyles.spicedSection} aria-labelledby="spiced-title">
+          <div className={repriskStyles.spicedHeading}>
+            <p className={styles.overline}>SALES METHODOLOGY IN THE OPERATING MODEL</p>
+            <h2 id="spiced-title">Operationalising SPICED in Salesforce</h2>
+            <p>{content.spiced.introduction}</p>
+          </div>
+
+          <div className={repriskStyles.tableFrame}>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Stage</th>
+                  <th scope="col">SPICED captured</th>
+                  <th scope="col">Exit criteria</th>
+                </tr>
+              </thead>
+              <tbody>
+                {content.spiced.stages.map((row) => (
+                  <tr key={row.stage}>
+                    <th scope="row" data-label="Stage">{row.stage}</th>
+                    <td data-label="SPICED captured">{row.captured}</td>
+                    <td data-label="Exit criteria">{row.exitCriteria}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className={repriskStyles.spicedLegend}>{content.spiced.legend}</p>
+
+          <div className={repriskStyles.spicedPoints}>
+            {content.spiced.operatingPoints.map((point, index) => (
+              <article key={point}>
+                <span>0{index + 1}</span>
+                <p>{point}</p>
+              </article>
+            ))}
+          </div>
+        </section>
+
         <section className={styles.experienceSection} id="experience" aria-labelledby="experience-title">
           <div className={styles.sectionHeading}>
             <p className={styles.overline}>OPERATING EXPERIENCE</p>
@@ -182,7 +222,7 @@ export default function RepRiskPage() {
             <p className={styles.overline}>DESIGN PRINCIPLES</p>
             <h2 id="principles-title">How I approach commercial transformation.</h2>
           </div>
-          <div className={styles.principlesGrid}>
+          <div className={`${styles.principlesGrid} ${repriskStyles.principlesSix}`}>
             {content.principles.map((principle) => (
               <article key={principle.number}>
                 <span>{principle.number}</span>
