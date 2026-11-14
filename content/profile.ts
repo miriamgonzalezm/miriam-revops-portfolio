@@ -1,9 +1,9 @@
 export const profile = {
   name: "Miriam Gonzalez",
-  title: "Revenue Operations · GTM Systems & Commercial Operations · AI Automation",
-  headline: "I turn operational friction into systems people can use.",
+  title: "Revenue Operations · GTM Systems · Commercial Intelligence · AI Automation",
+  headline: "I turn commercial complexity into operating systems people can trust.",
   introduction:
-    "I build the operating processes behind reliable forecasts, clearer commercial decisions and scalable GTM execution — translating business needs into systems, data governance and practical AI automation.",
+    "I connect Marketing, Sales and Finance through the processes, systems and insight behind reliable growth - from lifecycle and pipeline design to forecasting, commercial controls and practical AI automation.",
   location: "Woking, UK",
   context: "B2B Software",
   credential: "Salesforce Certified",
@@ -11,9 +11,9 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/mirgonzalez1/",
   aboutHeadline: "I sit between commercial teams and the systems they depend on.",
   about: [
-    "I'm a Senior Sales Operations Manager working across Revenue Operations, commercial planning, GTM systems, governance and automation in B2B software.",
+    "I'm a Senior Sales Operations Manager working across full-funnel Revenue Operations, commercial planning, GTM systems, governance and automation in B2B software.",
     "My background in Industrial & Systems Engineering shapes how I work: understand the commercial problem, design the operating process, translate it into systems and data requirements, then test whether it holds up in real conditions.",
-    "At Ascertia, I work across Sales, Channel, Finance, Marketing and Systems. My scope spans forecasting and QBRs, quota and KPI planning, sales compensation, partner operations, Salesforce governance and AI-enabled automation.",
+    "At Ascertia, I work across Marketing, Sales, Channel, Customer Success, Finance and Systems. My scope spans lifecycle and lead management, marketing performance, forecasting and QBRs, commercial planning, Salesforce and HubSpot governance, financial controls and AI-enabled automation.",
     "I have continued building and improving these commercial processes through Ascertia's acquisition and integration into InfoCert/Tinexta, adapting governance and cross-functional ways of working as the organisation evolves."
   ],
   finalHeadline: "Commercial operations built for clarity, change and scale.",
@@ -22,12 +22,12 @@ export const profile = {
 } as const;
 
 export const operatingRange = [
+  { title: "Market & Revenue Intelligence", description: "Connecting audience, engagement and campaign activity to lead quality, pipeline and commercial outcomes." },
   { title: "Revenue Operating Cadence", description: "Owning forecast reviews and business reviews that turn pipeline, revenue and KPI performance into a consistent leadership view." },
-  { title: "Commercial Planning", description: "Partnering on annual plans, quota allocation and KPI setting using recurring revenue, retention, pipeline, deal mix and seller performance." },
-  { title: "GTM Process & Systems", description: "Starting with the commercial problem, then translating the process into Salesforce, HubSpot, Apollo.io and finance-system requirements." },
-  { title: "Data & Governance", description: "Defining ownership, controls and data standards across direct, partner-led and customer lifecycle processes." },
+  { title: "Lifecycle & GTM Process", description: "Designing the stages, ownership, routing and hand-offs that connect Marketing, Sales and Customer Success." },
+  { title: "Commercial Systems & Governance", description: "Translating business requirements into Salesforce, HubSpot and finance-system workflows, controls and trusted data." },
   { title: "AI & Automation", description: "Designing practical automation and Agentforce workflows with explicit rules, tested edge cases and human oversight." },
-  { title: "Cross-functional Operations", description: "Connecting Sales, Channel, Marketing, Finance and Systems as priorities, structures and ways of working evolve." }
+  { title: "Cross-functional Leadership", description: "Connecting commercial teams, Finance and Systems so decisions become workable processes rather than isolated requests." }
 ] as const;
 
 export const workingMethod = [
@@ -37,13 +37,13 @@ export const workingMethod = [
 ] as const;
 
 export const systems: { name: string; detail?: string }[] = [
-  { name: "Salesforce Sales Cloud" },
-  { name: "Salesforce Agentforce" },
-  { name: "Salesforce Flow" },
+  { name: "Salesforce Sales Cloud", detail: "Process, reporting & governance" },
+  { name: "Salesforce Agentforce", detail: "Specialised revenue workflows" },
+  { name: "Salesforce Flow", detail: "Automation & approvals" },
   { name: "SOQL" },
-  { name: "HubSpot" },
-  { name: "Apollo.io" },
-  { name: "Xero" },
+  { name: "HubSpot", detail: "Lifecycle, scoring & reporting" },
+  { name: "Apollo.io", detail: "Enrichment & outbound" },
+  { name: "Xero", detail: "Commercial reconciliation" },
   { name: "Advanced Excel" },
   { name: "Jira" },
   { name: "SharePoint" }

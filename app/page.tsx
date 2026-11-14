@@ -39,15 +39,15 @@ export default function Home() {
               </div>
               <p className="hero-meta">{profile.location}<span />{profile.context}<span />{profile.credential}</p>
             </div>
-            <aside className="hero-system" aria-label="AI-enabled GTM operating model">
-              <div className="system-top"><span>AI-enabled GTM</span><span>Agentforce</span></div>
-              <div className="system-core"><span>4 specialised<br />agents</span></div>
+            <aside className="hero-system" aria-label="Connected revenue operating model">
+              <div className="system-top"><span>Full-funnel operations</span><span>One system</span></div>
+              <div className="system-core"><span>Commercial<br />signal to action</span></div>
               <ol>
-                <li><span>01</span>Sales Operations</li>
-                <li><span>02</span>RFP Responses</li>
-                <li><span>03</span>Accounts & Renewals</li>
-                <li><span>04</span>Sales Leadership</li>
-                <li><span>05</span>Human judgement retained</li>
+                <li><span>01</span>Market & demand</li>
+                <li><span>02</span>Lifecycle & lead management</li>
+                <li><span>03</span>Sales execution & forecasting</li>
+                <li><span>04</span>Commercial control</li>
+                <li><span>05</span>Automation with human judgement</li>
               </ol>
             </aside>
           </div>
@@ -124,7 +124,7 @@ export default function Home() {
 
         <section className="section operating-areas" aria-labelledby="areas-title">
           <div className="shell">
-            <div className="section-heading split-heading"><p className="kicker">Also in scope</p><h2 id="areas-title">The recurring work that keeps revenue operations moving.</h2></div>
+            <div className="section-heading split-heading"><p className="kicker">Also in scope</p><h2 id="areas-title">The operating rhythm behind the systems.</h2></div>
             <div className="areas-list">
               {operatingAreas.map((area, index) => <article key={area.title}><span>0{index + 1}</span><h3>{area.title}</h3><p>{area.description}</p></article>)}
             </div>
@@ -178,7 +178,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer><div className="shell"><strong>{profile.name}</strong><span>Revenue Operations · GTM Systems · AI Automation</span><span>Woking, UK</span><a href="#top">Back to top ↑</a></div></footer>
+      <footer><div className="shell"><strong>{profile.name}</strong><span>Revenue Operations · GTM Systems · Commercial Intelligence</span><span>Woking, UK</span><a href="#top">Back to top ↑</a></div></footer>
     </>
   );
 }

@@ -2,21 +2,21 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Miriam Gonzalez | Revenue Operations, GTM Systems & AI Automation",
-  description: "Revenue Operations portfolio spanning commercial planning, forecasting, Salesforce and GTM systems, governance, Agentforce automation and cross-functional operations.",
-  keywords: ["Revenue Operations", "GTM Operations", "GTM Systems", "Sales Operations", "Salesforce Agentforce", "Salesforce", "HubSpot"],
+  title: "Miriam Gonzalez | Revenue Operations, GTM Systems & Commercial Intelligence",
+  description: "Full-funnel Revenue Operations portfolio spanning marketing and sales operations, forecasting, lifecycle management, Salesforce, HubSpot, commercial governance and practical AI automation.",
+  keywords: ["Revenue Operations", "GTM Operations", "GTM Systems", "Sales Operations", "Marketing Operations", "Commercial Intelligence", "Salesforce Agentforce", "Salesforce", "HubSpot"],
   authors: [{ name: "Miriam Gonzalez" }],
   creator: "Miriam Gonzalez",
   openGraph: {
     type: "website",
     locale: "en_GB",
-    title: "Miriam Gonzalez | Revenue Operations, GTM Systems & AI Automation",
-    description: "Commercial operations, GTM systems and practical AI automation — from forecasting and governance to a suite of Salesforce Agentforce agents."
+    title: "Miriam Gonzalez | Revenue Operations, GTM Systems & Commercial Intelligence",
+    description: "Full-funnel operations connecting marketing, sales and finance through trusted data, commercial systems and practical AI automation."
   },
   twitter: {
     card: "summary",
-    title: "Miriam Gonzalez | Revenue Operations, GTM Systems & AI Automation",
-    description: "Turning commercial friction into operating processes, systems and practical AI automation."
+    title: "Miriam Gonzalez | Revenue Operations, GTM Systems & Commercial Intelligence",
+    description: "Turning commercial complexity into operating systems people can trust."
   }
 };
 
