@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Fragment } from "react";
 import { ArrowIcon } from "@/components/ArrowIcon";
 import { repriskPortfolio as content } from "@/content/reprisk";
 import styles from "../relay/relay.module.css";
@@ -85,17 +86,34 @@ export default function RepRiskPage() {
             <p>{content.commercialModel.body}</p>
             <blockquote className={styles.motionQuote}>{content.commercialModel.pullQuote}</blockquote>
           </div>
-          <div className={styles.flowModel}>
-            <p className={styles.flowLabel}>LEAD → OPPORTUNITY → QUOTE → CONTRACT → REVENUE</p>
-            <ol>
-              {content.leadToCashFlow.steps.map((step, index) => (
-                <li key={step}>
-                  <span>{String(index + 1).padStart(2, "0")}</span>
-                  <strong>{step}</strong>
-                </li>
+          <div className={repriskStyles.processFlow}>
+            <p className={repriskStyles.processHeader}>LEAD → OPPORTUNITY → QUOTE → CONTRACT → REVENUE → RENEWAL</p>
+            <div className={repriskStyles.processGroups}>
+              {content.leadToCashFlow.groups.map((group) => (
+                <section className={repriskStyles.processGroup} key={group.label} aria-label={group.label}>
+                  <h3>{group.label}</h3>
+                  <ol>
+                    {group.steps.map((step) => (
+                      <li key={step.number}>
+                        <span className={repriskStyles.stepNumber}>{step.number}</span>
+                        <div className={repriskStyles.stepCopy}>
+                          <strong>{step.title}</strong>
+                          {"note" in step && step.note && <small>{step.note}</small>}
+                        </div>
+                        <span className={repriskStyles.systemChip}>{step.chip}</span>
+                      </li>
+                    ))}
+                  </ol>
+                </section>
               ))}
-            </ol>
-            <p className={styles.flowNote}>{content.leadToCashFlow.note}</p>
+            </div>
+            <div className={repriskStyles.foundationBand}>
+              <p>Foundation · across every step</p>
+              <ul>
+                {content.leadToCashFlow.foundation.map((item) => <li key={item}>{item}</li>)}
+              </ul>
+            </div>
+            <p className={repriskStyles.processNote}>{content.leadToCashFlow.note}</p>
           </div>
         </section>
 
@@ -107,75 +125,89 @@ export default function RepRiskPage() {
 
           <div className={styles.flagshipList}>
             {content.flagshipCases.map((caseStudy) => (
-              <article className={styles.flagshipCase} key={caseStudy.number}>
-                <div className={styles.caseHeader}>
-                  <span className={styles.caseNumber}>{caseStudy.number}</span>
-                  <div>
-                    <p className={styles.caseEyebrow}>{caseStudy.eyebrow}</p>
-                    <h3>{caseStudy.title}</h3>
-                    <p className={styles.relevance}>{caseStudy.relevance.join(" · ")}</p>
+              <Fragment key={caseStudy.number}>
+                <article className={styles.flagshipCase}>
+                  <div className={styles.caseHeader}>
+                    <span className={styles.caseNumber}>{caseStudy.number}</span>
+                    <div>
+                      <p className={styles.caseEyebrow}>{caseStudy.eyebrow}</p>
+                      <h3>{caseStudy.title}</h3>
+                      <p className={styles.relevance}>{caseStudy.relevance.join(" · ")}</p>
+                    </div>
                   </div>
-                </div>
-                <div className={styles.caseBody}>
-                  <div className={styles.challengeBlock}>
-                    <h4>Challenge</h4>
-                    <p>{caseStudy.challenge}</p>
+                  <div className={styles.caseBody}>
+                    <div className={styles.challengeBlock}>
+                      <h4>Challenge</h4>
+                      <p>{caseStudy.challenge}</p>
+                    </div>
+                    <div className={styles.actionBlock}>
+                      <h4>What I did</h4>
+                      <ul>{caseStudy.actions.map((action) => <li key={action}>{action}</li>)}</ul>
+                      {"migrationConsiderations" in caseStudy && caseStudy.migrationConsiderations && (
+                        <div className={repriskStyles.migrationConsiderations}>
+                          <h4>Migration considerations I&apos;m working through</h4>
+                          <ul>
+                            {caseStudy.migrationConsiderations.map((consideration) => (
+                              <li key={consideration}>{consideration}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                    <aside className={styles.impactBlock}>
+                      <h4>Outcome</h4>
+                      <p className={styles.impactTitle}>{caseStudy.impactTitle}</p>
+                      {"proofLine" in caseStudy && caseStudy.proofLine && (
+                        <p className={styles.caseProofLine}>{caseStudy.proofLine}</p>
+                      )}
+                      <blockquote className={styles.caseQuote}>{caseStudy.pullQuote}</blockquote>
+                    </aside>
                   </div>
-                  <div className={styles.actionBlock}>
-                    <h4>What I did</h4>
-                    <ul>{caseStudy.actions.map((action) => <li key={action}>{action}</li>)}</ul>
-                  </div>
-                  <aside className={styles.impactBlock}>
-                    <h4>Outcome</h4>
-                    <p className={styles.impactTitle}>{caseStudy.impactTitle}</p>
-                    {"proofLine" in caseStudy && caseStudy.proofLine && (
-                      <p className={styles.caseProofLine}>{caseStudy.proofLine}</p>
-                    )}
-                    <blockquote className={styles.caseQuote}>{caseStudy.pullQuote}</blockquote>
-                  </aside>
-                </div>
-              </article>
+                </article>
+
+                {caseStudy.number === "02" && (
+                  <section className={repriskStyles.spicedSection} aria-labelledby="spiced-title">
+                    <div className={repriskStyles.spicedHeading}>
+                      <p className={styles.overline}>SALES METHODOLOGY IN THE OPERATING MODEL</p>
+                      <h2 id="spiced-title">Operationalising SPICED in Salesforce</h2>
+                      <p>{content.spiced.introduction}</p>
+                    </div>
+
+                    <div className={repriskStyles.tableFrame}>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th scope="col">Stage</th>
+                            <th scope="col">SPICED captured</th>
+                            <th scope="col">Exit criteria</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {content.spiced.stages.map((row) => (
+                            <tr key={row.stage}>
+                              <th scope="row" data-label="Stage">{row.stage}</th>
+                              <td data-label="SPICED captured">{row.captured}</td>
+                              <td data-label="Exit criteria">{row.exitCriteria}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                    <p className={repriskStyles.spicedLegend}>{content.spiced.legend}</p>
+
+                    <div className={repriskStyles.spicedPoints}>
+                      {content.spiced.operatingPoints.map((point, index) => (
+                        <article key={point}>
+                          <span>0{index + 1}</span>
+                          <p>{point}</p>
+                        </article>
+                      ))}
+                    </div>
+                  </section>
+                )}
+              </Fragment>
             ))}
           </div>
-
-          <section className={repriskStyles.spicedSection} aria-labelledby="spiced-title">
-            <div className={repriskStyles.spicedHeading}>
-              <p className={styles.overline}>SALES METHODOLOGY IN THE OPERATING MODEL</p>
-              <h2 id="spiced-title">Operationalising SPICED in Salesforce</h2>
-              <p>{content.spiced.introduction}</p>
-            </div>
-
-            <div className={repriskStyles.tableFrame}>
-              <table>
-                <thead>
-                  <tr>
-                    <th scope="col">Stage</th>
-                    <th scope="col">SPICED captured</th>
-                    <th scope="col">Exit criteria</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {content.spiced.stages.map((row) => (
-                    <tr key={row.stage}>
-                      <th scope="row" data-label="Stage">{row.stage}</th>
-                      <td data-label="SPICED captured">{row.captured}</td>
-                      <td data-label="Exit criteria">{row.exitCriteria}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className={repriskStyles.spicedLegend}>{content.spiced.legend}</p>
-
-            <div className={repriskStyles.spicedPoints}>
-              {content.spiced.operatingPoints.map((point, index) => (
-                <article key={point}>
-                  <span>0{index + 1}</span>
-                  <p>{point}</p>
-                </article>
-              ))}
-            </div>
-          </section>
 
           <div className={styles.additionalProof}>
             <h3>Additional operating proof</h3>
@@ -222,7 +254,7 @@ export default function RepRiskPage() {
             <p className={styles.overline}>DESIGN PRINCIPLES</p>
             <h2 id="principles-title">How I approach commercial transformation.</h2>
           </div>
-          <div className={`${styles.principlesGrid} ${repriskStyles.principlesSix}`}>
+          <div className={styles.principlesGrid}>
             {content.principles.map((principle) => (
               <article key={principle.number}>
                 <span>{principle.number}</span>

@@ -14,6 +14,11 @@ export const repriskPortfolio = {
   },
   proof: [
     {
+      label: "Capture",
+      value: "Lead-to-opportunity built from scratch",
+      detail: "Segmentation · qualification · routing · GDPR controls",
+    },
+    {
       label: "Build",
       value: "CPQ that works in practice",
       detail: "Product catalogue · pricing · configuration rules · quote templates",
@@ -32,18 +37,18 @@ export const repriskPortfolio = {
   priorities: [
     {
       number: "01",
-      title: "Make Salesforce trustworthy",
-      body: "Define the stages, ownership, qualification and data standards behind lead and opportunity management.",
+      title: "Lead-to-opportunity",
+      body: "Design lead management end to end: capture, qualification, routing, ownership and hand-off into Salesforce as the single source of truth.",
     },
     {
       number: "02",
-      title: "Make commercial complexity configurable",
-      body: "Translate products, pricing, compatibility and approval rules into a CPQ process sellers can follow.",
+      title: "Opportunity management & SPICED",
+      body: "Make the sales methodology part of how opportunities are captured, progressed, reviewed and forecast in Sales Cloud.",
     },
     {
       number: "03",
-      title: "Migrate without carrying complexity forward",
-      body: "Use the move to Revenue Cloud to simplify the catalogue, process and controls rather than reproduce legacy design.",
+      title: "CPQ to Revenue Cloud",
+      body: "Redesign product configuration, pricing, quoting and approvals, and use the move to Revenue Cloud to simplify rather than reproduce legacy design.",
     },
   ],
   commercialModel: {
@@ -53,24 +58,84 @@ export const repriskPortfolio = {
     pullQuote: "Salesforce becomes a source of truth when the commercial rules behind the data are clear.",
   },
   leadToCashFlow: {
-    steps: [
-      "Lead qualification",
-      "Opportunity methodology",
-      "Solution & quote configuration",
-      "Pricing & approvals",
-      "Contract, licences & activation",
-      "Invoicing & reconciliation",
-      "Mid-term amendments & upsell",
-      "Forecast & improve",
+    groups: [
+      {
+        label: "Acquire · lead to contract",
+        steps: [
+          { number: "01", title: "Lead capture & qualification", chip: "Sales Cloud" },
+          { number: "02", title: "Opportunity management & methodology", chip: "Sales Cloud" },
+          { number: "03", title: "Configure & quote", chip: "CPQ → Revenue Cloud" },
+          { number: "04", title: "Pricing & approvals", chip: "CPQ → Revenue Cloud" },
+          { number: "05", title: "Contract & order", chip: "CPQ → Revenue Cloud" },
+        ],
+      },
+      {
+        label: "Retain & grow · contract to renewal",
+        steps: [
+          { number: "06", title: "Licences & activation", chip: "Salesforce" },
+          { number: "07", title: "Invoicing & revenue", chip: "Xero" },
+          { number: "08", title: "Amendments & upsell", chip: "CPQ → Revenue Cloud" },
+          {
+            number: "09",
+            title: "Renewal",
+            chip: "CPQ → Revenue Cloud",
+            note: "↺ loops back as a new opportunity",
+          },
+        ],
+      },
+    ],
+    foundation: [
+      "Salesforce as single source of truth",
+      "Forecasting & pipeline visibility",
+      "Controls & reconciliation",
+      "Methodology captured in the CRM",
     ],
     note: "My strongest direct experience sits where sales process, product complexity, commercial governance and Salesforce configuration meet.",
   },
   flagshipCases: [
     {
       number: "01",
+      eyebrow: "LEAD-TO-OPPORTUNITY · HUBSPOT ↔ SALESFORCE",
+      title: "Building the lead-to-opportunity process from scratch",
+      relevance: ["Segmentation", "Qualification", "Routing", "Consent"],
+      challenge:
+        "Ascertia had no outbound process, two legacy HubSpot environments and no consistent route from marketing engagement to a qualified opportunity in Salesforce.",
+      actions: [
+        "Designed the outbound operating model from scratch: target-account segmentation, enrichment, qualification, routing, ownership, exclusions and GDPR/suppression controls.",
+        "Selected Apollo after proofs of concept with Cognism and ZoomInfo, and integrated it with Salesforce as the source of truth.",
+        "Built the business case that won CRO approval to consolidate two HubSpot environments into one, migrating approximately 7,000 contacts and reducing licences by more than 50%.",
+        "Built a HubSpot engagement score across email, forms, website and paid social, with a 50% decay every three months so it reflects recent engagement.",
+        "Implemented a subscription-preference model shared by HubSpot and Salesforce through a two-way-synced field.",
+      ],
+      impactTitle:
+        "A single, governed route from first engagement to qualified opportunity, with consent and ownership clear at every step.",
+      pullQuote: "Lead management works when every lead has a clear owner, a clear next step and a reason to be there.",
+      impacts: [],
+    },
+    {
+      number: "02",
+      eyebrow: "SALES METHODOLOGY · OPPORTUNITY MANAGEMENT",
+      title: "Sales methodology: MEDDIC today, SPICED at RepRisk",
+      relevance: ["MEDDIC", "Qualification", "Opportunity quality", "Forecast discipline"],
+      challenge:
+        "A methodology only improves execution when qualification evidence is captured consistently and becomes part of opportunity reviews, forecasting and seller behaviour.",
+      actions: [
+        "Worked with the Sales Director to implement MEDDIC as part of a wider sales-process project.",
+        "Translated qualification expectations into clearer Salesforce fields, stage requirements and review conversations.",
+        "Built an AI agent that identifies and drafts missing MEDDIC fields from call notes, with sellers reviewing and confirming the content.",
+        "Ran an extended Gong proof of concept to assess conversation intelligence and deal-risk signals alongside the methodology work.",
+      ],
+      impactTitle:
+        "The MEDDIC implementation is substantially complete; the current focus is adoption, consistent field completion and use in pipeline reviews.",
+      proofLine: "Current focus · adoption, field completion and use in pipeline reviews",
+      pullQuote: "Methodology creates value when it changes what sellers capture, discuss and decide.",
+      impacts: [],
+    },
+    {
+      number: "03",
       eyebrow: "SALESFORCE CPQ · LEAD-TO-CASH",
       title: "Making CPQ work for a complex product portfolio",
-      relevance: ["Quote configuration", "Pricing", "Quoting", "Approvals"],
+      relevance: ["Product catalogue", "Configuration", "Pricing", "Approvals"],
       challenge:
         "Ascertia sells complex PKI and digital-signature products across perpetual, annual and user licences, signature packs, support and add-ons. Long-cycle deals and product dependencies made accurate quoting difficult when the CPQ design did not reflect how the business actually sold.",
       actions: [
@@ -85,7 +150,7 @@ export const repriskPortfolio = {
       impacts: [],
     },
     {
-      number: "02",
+      number: "04",
       eyebrow: "REVENUE CLOUD · MIGRATION READINESS",
       title: "Preparing a CPQ-to-Revenue Cloud migration",
       relevance: ["Requirements", "Solution comparison", "Catalogue redesign", "Migration planning"],
@@ -97,35 +162,23 @@ export const repriskPortfolio = {
         "Identified Revenue Cloud as the preferred fit and began hands-on preparation in Revenue Cloud orgs while budget approval remains pending.",
         "Redesigned the product catalogue and migration approach around what should be retained, simplified or left behind.",
       ],
+      migrationConsiderations: [
+        "Revenue Cloud is a new data model, not a CPQ upgrade: the catalogue, configuration and pricing logic need redesigning, not copying.",
+        "Moving products to attribute-based configuration to reduce SKU sprawl.",
+        "Rebuilding pricing logic and discount approvals on the new pricing model.",
+        "Planning how active contracts and assets migrate, so amendments and renewals keep working after go-live.",
+        "Phased cut-over with clear ownership between the internal team and the implementation partner.",
+      ],
       impactTitle:
         "Created a migration approach grounded in real product, pricing, approval and lead-to-cash requirements rather than a lift-and-shift of the current configuration.",
       proofLine: "Current focus · hands-on Revenue Cloud preparation, product catalogue redesign and migration planning",
       pullQuote: "A platform migration is an opportunity to remove complexity, not preserve it in a new data model.",
       impacts: [],
     },
-    {
-      number: "03",
-      eyebrow: "SALES METHODOLOGY · OPPORTUNITY MANAGEMENT",
-      title: "Sales methodology: MEDDIC today, SPICED at RepRisk",
-      relevance: ["MEDDIC", "Qualification", "Opportunity quality", "Forecast discipline"],
-      challenge:
-        "A methodology only improves execution when qualification evidence is captured consistently and becomes part of opportunity reviews, forecasting and seller behaviour.",
-      actions: [
-        "Worked with the Sales Director to implement MEDDIC as part of a wider sales-process project.",
-        "Translating qualification expectations into clearer Salesforce fields, stage requirements and review conversations.",
-        "Using an AI agent to identify and draft missing MEDDIC fields from call notes, with sellers reviewing and confirming the proposed content.",
-        "Ran an extended Gong proof of concept to assess conversation intelligence and deal-risk signals alongside the methodology work.",
-      ],
-      impactTitle:
-        "The MEDDIC implementation is substantially complete; the current focus is adoption, consistent field completion and use in pipeline reviews.",
-      proofLine: "Current focus · adoption, field completion and use in pipeline reviews",
-      pullQuote: "Methodology creates value when it changes what sellers capture, discuss and decide.",
-      impacts: [],
-    },
   ],
   spiced: {
     introduction:
-      "At Ascertia, the MEDDIC implementation is substantially complete and the current focus is adoption, field completion and use in pipeline reviews. This is how I'd bring the same discipline to SPICED at RepRisk, as a starting point to refine with your SPICED consultant.",
+      "This is how I'd bring the same discipline to SPICED at RepRisk, as a starting point to refine with your SPICED consultant.",
     stages: [
       { stage: "Discovery", captured: "Situation, Pain", exitCriteria: "Pain confirmed by the customer" },
       { stage: "Qualification", captured: "Impact, Critical Event", exitCriteria: "Impact quantified, date known" },
@@ -138,6 +191,7 @@ export const repriskPortfolio = {
       "Beyond new business: as a subscription business, the same Pain and Impact carry into renewals and expansion, so Client Growth knows why the customer bought.",
       "Linked to pricing: Impact and Critical Event become the justification for discount approvals in deal desk, so pricing exceptions are tied to customer value.",
       "Adoption: a SPICED completion dashboard by stage and seller, reviewed in pipeline calls, plus an AI assist that drafts SPICED fields from call notes for the seller to confirm.",
+      "Forecast credibility: the Critical Event date is checked against the close date in pipeline reviews, and deals without one are flagged as risk.",
     ],
   },
   additionalProof: [
@@ -225,6 +279,11 @@ export const repriskPortfolio = {
       title: "Own the design, partner on delivery",
       body: "Own the design and requirements, work alongside the implementation partner, and build what doesn't need them, so knowledge stays in-house.",
     },
+    {
+      number: "07",
+      title: "Design for the renewal on day one",
+      body: "Structure products, contracts and assets so amendments, upsell and renewals work without manual rework.",
+    },
   ],
   systems: [
     "Salesforce Sales Cloud · leads, opportunities & forecasting",
@@ -241,6 +300,6 @@ export const repriskPortfolio = {
   certifications: [
     "Salesforce Certified Administrator",
     "Salesforce Certified Sales Cloud Consultant",
-    "Salesforce Revenue Management Consultant · In progress",
+    "Salesforce Certified Revenue Management Consultant (formerly Revenue Cloud Consultant) · In progress",
   ],
 } as const;
