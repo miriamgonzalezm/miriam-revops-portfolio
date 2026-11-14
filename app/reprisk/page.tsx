@@ -86,7 +86,7 @@ export default function RepRiskPage() {
             <blockquote className={styles.motionQuote}>{content.commercialModel.pullQuote}</blockquote>
           </div>
           <div className={styles.flowModel}>
-            <p className={styles.flowLabel}>LEAD → OPPORTUNITY → QUOTE → CASH</p>
+            <p className={styles.flowLabel}>LEAD → OPPORTUNITY → QUOTE → CONTRACT → REVENUE</p>
             <ol>
               {content.leadToCashFlow.steps.map((step, index) => (
                 <li key={step}>
@@ -236,7 +236,7 @@ export default function RepRiskPage() {
         <section className={styles.systemsSection} id="systems" aria-labelledby="systems-title">
           <div className={styles.systemsIntro}>
             <p className={styles.overline}>SYSTEMS & CERTIFICATIONS</p>
-            <h2 id="systems-title">Tools used in the commercial operating model.</h2>
+            <h2 id="systems-title">Systems used to build and govern the revenue process.</h2>
           </div>
           <div className={styles.systemsGrid}>
             <div className={styles.systemList}>{content.systems.map((system) => <span key={system}>{system}</span>)}</div>
@@ -255,7 +255,6 @@ export default function RepRiskPage() {
           <div className={styles.actions}>
             <a className={styles.primaryButton} href={content.profile.linkedIn} target="_blank" rel="noreferrer">LinkedIn <ArrowIcon external /></a>
             <a className={styles.secondaryButton} href={`mailto:${content.profile.email}`}>Email Miriam</a>
-            <Link className={styles.textLink} href="/">Main portfolio <ArrowIcon /></Link>
           </div>
         </section>
       </div>
