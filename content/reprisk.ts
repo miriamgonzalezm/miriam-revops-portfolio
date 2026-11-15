@@ -178,18 +178,19 @@ export const repriskPortfolio = {
     {
       number: "05",
       eyebrow: "REVENUE DEFINITIONS · DEAL GOVERNANCE",
-      title: "ARR, multi-year and retention definitions before metrics",
+      title: "One definition of ARR and NRR, before any dashboard",
       relevance: ["ARR", "Multi-year", "NRR", "Churn"],
       challenge:
-        "Net retention was requested on top of a revenue model that didn't match strict ARR and NRR definitions, and Finance needed closed months to stay locked.",
+        "Leadership wanted ARR and net retention reporting, but the answer depended on how multi-year deals, discounts, one-time fees and churn were treated.",
       actions: [
-        "Stopped before building the metric and revisited definitions, revenue types, the data model and Finance's month-close constraints.",
-        "Defined the rules first: ARR as recurring value net of discounts, one-time fees excluded, ramps and uplifts as contracted future ARR, churn counted on the contract end date.",
+        "Defined the rules: ARR as recurring value net of discounts, one-time fees excluded, the current year's value on multi-year deals with ramps and uplifts as contracted future ARR, churn counted on the contract end date, and net retention measured on the same customer cohort, excluding new logos.",
         "Separated the numbers by purpose: ARR for growth and the board, new ARR for commissions, TCV for bookings and backlog.",
+        "Built the ARR and NRR reporting in Salesforce on those definitions.",
+        "Rebuilt the model in a working Revenue Cloud environment (fictional data): ARR read from subscription assets, one-time fees excluded, a three-year deal broken into list price, discount, ARR, ACV and TCV, the treatment of a ramp, and NRR and GRR.",
       ],
       impactTitle:
-        "Avoided building a strategic metric on the wrong foundation; the definitions now drive the model, not the other way round.",
-      pullQuote: "Sometimes the best operational decision is recognising that you're about to automate the wrong thing.",
+        "One set of definitions behind every ARR and NRR number, ready to carry into Revenue Cloud, where assets make ARR traceable to what was signed.",
+      pullQuote: "Agree the definition first; the dashboard is the easy part.",
       impacts: [],
     },
   ],
@@ -203,7 +204,7 @@ export const repriskPortfolio = {
       { stage: "Proposal", captured: "Decision", exitCriteria: "Decision process and economic buyer known; at least 4 of 6 elements captured" },
       { stage: "Negotiation / Procurement & Legal", captured: "All reviewed", exitCriteria: "Discount within authority or approved; procurement, security and DORA review on track" },
     ],
-    legend: "S = Situation · P = Pain · I = Impact · C = Critical Event · D = Decision",
+    legend: "S = Situation · P = Pain · I = Impact · C = Critical Event · D = Decision (incl. economic buyer) · 6 fields in Salesforce",
     operatingPoints: [
       "In Salesforce: SPICED fields on the opportunity, Path guidance per stage, and validation rules as exit criteria.",
       "Beyond new business: as a subscription business, the same Pain and Impact carry into renewals and expansion, so Client Growth knows why the customer bought.",
