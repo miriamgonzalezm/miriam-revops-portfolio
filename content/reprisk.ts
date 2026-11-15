@@ -3,7 +3,7 @@ export const repriskPortfolio = {
     name: "Miriam Gonzalez",
     role: "Senior Sales Operations Manager",
     location: "Woking, Surrey",
-    positioning: "GTM & Revenue Operations · Salesforce CPQ · Revenue Cloud preparation",
+    positioning: "GTM & Revenue Operations · Salesforce CPQ · Hands-on Revenue Cloud",
     context: "Selected work relevant to RepRisk · GTM transformation",
     headline: "I turn complex commercial rules into Salesforce processes people can trust.",
     introduction:
@@ -122,8 +122,8 @@ export const repriskPortfolio = {
       actions: [
         "Worked with the Sales Director to implement MEDDIC as part of a wider sales-process project.",
         "Translated qualification expectations into clearer Salesforce fields, stage requirements and review conversations.",
-        "Built an AI agent that identifies and drafts missing MEDDIC fields from call notes, with sellers reviewing and confirming the content.",
-        "Ran an extended Gong proof of concept to assess conversation intelligence and deal-risk signals alongside the methodology work.",
+        "Ran an extended Gong proof of concept, which struggled with our custom partner-deal model, so I built an Agentforce agent that drafts missing MEDDIC fields from call notes for sellers to confirm: a better fit for how we sell, at a fraction of the cost.",
+        "Standardised how Sales and Pre-Sales work an opportunity: requests sent from the opportunity, assigned automatically and pushed into the Pre-Sales Jira board, a Teams channel per deal and the opportunity updated as tasks close. Pre-Sales turnaround on POCs and requests fell by around 25%.",
       ],
       impactTitle:
         "The MEDDIC implementation is substantially complete; the current focus is adoption, consistent field completion and use in pipeline reviews.",
@@ -175,15 +175,33 @@ export const repriskPortfolio = {
       pullQuote: "A platform migration is an opportunity to remove complexity, not preserve it in a new data model.",
       impacts: [],
     },
+    {
+      number: "05",
+      eyebrow: "REVENUE DEFINITIONS · DEAL GOVERNANCE",
+      title: "ARR, multi-year and retention definitions before metrics",
+      relevance: ["ARR", "Multi-year", "NRR", "Churn"],
+      challenge:
+        "Net retention was requested on top of a revenue model that didn't match strict ARR and NRR definitions, and Finance needed closed months to stay locked.",
+      actions: [
+        "Stopped before building the metric and revisited definitions, revenue types, the data model and Finance's month-close constraints.",
+        "Defined the rules first: ARR as recurring value net of discounts, one-time fees excluded, ramps and uplifts as contracted future ARR, churn counted on the contract end date.",
+        "Separated the numbers by purpose: ARR for growth and the board, new ARR for commissions, TCV for bookings and backlog.",
+      ],
+      impactTitle:
+        "Avoided building a strategic metric on the wrong foundation; the definitions now drive the model, not the other way round.",
+      pullQuote: "Sometimes the best operational decision is recognising that you're about to automate the wrong thing.",
+      impacts: [],
+    },
   ],
   spiced: {
     introduction:
       "This is how I'd bring the same discipline to SPICED at RepRisk, as a starting point to refine with your SPICED consultant.",
     stages: [
       { stage: "Discovery", captured: "Situation, Pain", exitCriteria: "Pain confirmed by the customer" },
-      { stage: "Qualification", captured: "Impact, Critical Event", exitCriteria: "Impact quantified, date known" },
-      { stage: "Proposal", captured: "Decision", exitCriteria: "Decision process and criteria mapped" },
-      { stage: "Close", captured: "All five reviewed", exitCriteria: "Ready for deal desk" },
+      { stage: "Qualified", captured: "Impact, Critical Event", exitCriteria: "Impact in euros, critical event dated" },
+      { stage: "Proof of Concept", captured: "(refine all)", exitCriteria: "PoC success criteria agreed with the customer" },
+      { stage: "Proposal", captured: "Decision", exitCriteria: "Decision process and economic buyer known; at least 4 of 6 elements captured" },
+      { stage: "Negotiation / Procurement & Legal", captured: "All reviewed", exitCriteria: "Discount within authority or approved; procurement, security and DORA review on track" },
     ],
     legend: "S = Situation · P = Pain · I = Impact · C = Critical Event · D = Decision",
     operatingPoints: [
@@ -211,7 +229,7 @@ export const repriskPortfolio = {
       title: "AI-enabled control",
       subtitle: "Sales Operations Agent",
       body: "Built a read-only Agentforce agent, including Apex actions and test classes, that reviews Salesforce against finance data and surfaces exceptions for human review.",
-      relevance: ["125+ estimated hours saved annually", "1.5–2 hours reduced to ~15 minutes"],
+      relevance: ["Weekly checks from 1.5–2 hours to ~15 minutes", "around 90–100 hours a year including month-end checks"],
     },
     {
       title: "Revenue operating rhythm",
@@ -219,68 +237,36 @@ export const repriskPortfolio = {
       body: "Own fortnightly forecast reviews and leadership reporting, monitoring pipeline coverage against a 3x target; quarter-end forecasts have remained broadly within approximately 10% of actuals.",
       relevance: ["Forecast discipline", "Pipeline governance", "Leadership visibility"],
     },
-  ],
-  operatingExperience: [
     {
-      title: "Hands-on Salesforce build",
-      body: "Design and build process, configuration, automation, reporting and controls rather than stopping at requirements.",
-    },
-    {
-      title: "Complex enterprise sales",
-      body: "Support long-cycle, technically complex opportunities across direct and partner-led routes to market.",
-    },
-    {
-      title: "Cross-functional design",
-      body: "Translate requirements with Sales, Product, Pre-Sales, Customer Success, Finance and Systems stakeholders.",
-    },
-    {
-      title: "Global governance",
-      body: "Own business-side Salesforce governance across more than 40 countries and multiple commercial motions.",
-    },
-    {
-      title: "Adoption and iteration",
-      body: "Test designs against real deals, exceptions and user behaviour, then refine what does not hold up in practice.",
+      title: "GTM KNOWLEDGE HUB",
+      subtitle: "Process documentation people actually follow",
+      body: "Wrote around 20 of the company's 80 SOPs and organise the commercial SharePoint: each SOP has an owning department and its review date in the title, nothing older than 24 months. New processes are rolled out in recorded sessions and adoption is measured in Salesforce. An RFP agent in Microsoft Teams searches the approved content, cites its sources and flags what needs Legal or Security, cutting an RFP from 1–2 days to 1–2 hours.",
+      relevance: ["Process governance", "Enablement", "AI on curated content"],
     },
   ],
-  transformation: {
-    title: "A builder inside the transformation",
-    introduction:
-      "I am most useful when the commercial logic is complex, the current process is not trusted and the answer requires both business judgement and hands-on system work.",
-    takeaway: "The work is complete when sellers can use the process, leaders trust the data and Finance can follow the transaction.",
-  },
   principles: [
     {
       number: "01",
-      title: "Start with the commercial rule",
-      body: "Understand the product, decision and exception before configuring the system.",
-    },
-    {
-      number: "02",
       title: "Simplify before migrating",
       body: "Do not reproduce obsolete catalogue and process complexity in a new platform.",
     },
     {
-      number: "03",
+      number: "02",
       title: "Connect the full transaction",
       body: "A quote is only reliable when contract, licence, invoice and reporting data remain aligned.",
     },
     {
-      number: "04",
+      number: "03",
       title: "Make methodology operational",
       body: "Qualification must shape CRM data and review behaviour, not live only in training materials.",
     },
     {
-      number: "05",
-      title: "Keep judgement visible",
-      body: "Automate repeatable checks while retaining human review for ambiguity and commercial risk.",
-    },
-    {
-      number: "06",
+      number: "04",
       title: "Own the design, partner on delivery",
       body: "Own the design and requirements, work alongside the implementation partner, and build what doesn't need them, so knowledge stays in-house.",
     },
     {
-      number: "07",
+      number: "05",
       title: "Design for the renewal on day one",
       body: "Structure products, contracts and assets so amendments, upsell and renewals work without manual rework.",
     },

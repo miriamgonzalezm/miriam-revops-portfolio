@@ -209,7 +209,7 @@ export default function RepRiskPage() {
             ))}
           </div>
 
-          <div className={styles.additionalProof}>
+          <div className={styles.additionalProof} id="experience">
             <h3>Additional operating proof</h3>
             <div className={styles.proofCards}>
               {content.additionalProof.map((item) => (
@@ -222,31 +222,6 @@ export default function RepRiskPage() {
               ))}
             </div>
           </div>
-        </section>
-
-        <section className={styles.experienceSection} id="experience" aria-labelledby="experience-title">
-          <div className={styles.sectionHeading}>
-            <p className={styles.overline}>OPERATING EXPERIENCE</p>
-            <h2 id="experience-title">Business judgement and hands-on Salesforce execution.</h2>
-          </div>
-          <div className={styles.experienceGrid}>
-            {content.operatingExperience.map((area, index) => (
-              <article key={area.title}>
-                <span>0{index + 1}</span>
-                <h3>{area.title}</h3>
-                <p>{area.body}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section className={styles.changeSection} aria-labelledby="transformation-title">
-          <div className={styles.changeIntro}>
-            <p className={styles.overline}>HOW I ADD VALUE</p>
-            <h2 id="transformation-title">{content.transformation.title}</h2>
-            <p>{content.transformation.introduction}</p>
-          </div>
-          <blockquote>{content.transformation.takeaway}</blockquote>
         </section>
 
         <section className={styles.principlesSection} aria-labelledby="principles-title">
