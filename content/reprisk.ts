@@ -208,7 +208,7 @@ export const repriskPortfolio = {
     operatingPoints: [
       "In Salesforce: SPICED fields on the opportunity, Path guidance per stage, and validation rules as exit criteria.",
       "Beyond new business: as a subscription business, the same Pain and Impact carry into renewals and expansion, so Client Growth knows why the customer bought.",
-      "Linked to pricing: Impact and Critical Event become the justification for discount approvals in deal desk, so pricing exceptions are tied to customer value.",
+      "Linked to pricing: Impact and Critical Event become the justification for discount approvals, so pricing exceptions are tied to customer value.",
       "Adoption: a SPICED completion dashboard by stage and seller, reviewed in pipeline calls, plus an AI assist that drafts SPICED fields from call notes for the seller to confirm.",
       "Forecast credibility: the Critical Event date is checked against the close date in pipeline reviews, and deals without one are flagged as risk.",
     ],
@@ -216,7 +216,7 @@ export const repriskPortfolio = {
   additionalProof: [
     {
       title: "Commercial exception governance",
-      subtitle: "Deal desk and approvals",
+      subtitle: "Deal approvals and pricing governance",
       body: "Manage approval rules, discount exceptions and non-standard commercial requests so decisions are justified, visible and connected to the quote-to-cash process.",
       relevance: ["Pricing governance", "Approvals", "Commercial control"],
     },
