@@ -121,8 +121,8 @@ export const repriskPortfolio = {
         "A methodology only improves execution when qualification evidence is captured consistently and becomes part of opportunity reviews, forecasting and seller behaviour.",
       actions: [
         "Worked with the Sales Director to implement MEDDIC as part of a wider sales-process project.",
-        "Translated qualification expectations into clearer Salesforce fields, stage requirements and review conversations.",
-        "Ran an extended Gong proof of concept, which struggled with our custom partner-deal model, so I built an Agentforce agent that drafts missing MEDDIC fields from call notes for sellers to confirm: a better fit for how we sell, at a fraction of the cost.",
+        "Translated qualification expectations into Salesforce fields, stage requirements and a field-completion dashboard used in pipeline reviews.",
+        "Ran an extended Gong proof of concept, which struggled with our custom partner-deal model, so I built an AI agent that drafts missing MEDDIC fields from call notes for sellers to confirm: a better fit for how we sell, at a fraction of the cost.",
         "Standardised how Sales and Pre-Sales work an opportunity: requests sent from the opportunity, assigned automatically and pushed into the Pre-Sales Jira board, a Teams channel per deal and the opportunity updated as tasks close. Pre-Sales turnaround on POCs and requests fell by around 25%.",
       ],
       impactTitle:
@@ -241,7 +241,7 @@ export const repriskPortfolio = {
     {
       title: "GTM KNOWLEDGE HUB",
       subtitle: "Process documentation people actually follow",
-      body: "Wrote around 20 of the company's 80 SOPs and organise the commercial SharePoint: each SOP has an owning department and its review date in the title, nothing older than 24 months. New processes are rolled out in recorded sessions and adoption is measured in Salesforce. An RFP agent in Microsoft Teams searches the approved content, cites its sources and flags what needs Legal or Security, cutting an RFP from 1–2 days to 1–2 hours.",
+      body: "Wrote around half of the company's SOPs and organise the commercial SharePoint: each SOP has an owning department and its review date in the title, nothing older than 24 months. New processes are rolled out in recorded sessions. An RFP agent in Microsoft Teams searches the approved content, cites its sources and flags what needs Legal or Security, cutting an RFP from 1–2 days to 1–2 hours.",
       relevance: ["Process governance", "Enablement", "AI on curated content"],
     },
   ],
